@@ -1,0 +1,2676 @@
+(base) lenovo@ubuntu:~$ pip install mlbox
+Collecting mlbox
+  Using cached https://files.pythonhosted.org/packages/c9/6b/1728c7a715fb38c7efb523cea02df4c43077fb4b1ffbfe3d37c4b0c32161/mlbox-0.6.2.tar.gz
+Requirement already satisfied: numpy>=1.13.0 in ./anaconda/anaconda3/lib/python3.7/site-packages (from mlbox) (1.16.2)
+Requirement already satisfied: matplotlib>=2.0.2 in ./anaconda/anaconda3/lib/python3.7/site-packages (from mlbox) (3.0.3)
+Collecting hyperopt==0.1 (from mlbox)
+  Using cached https://files.pythonhosted.org/packages/39/51/16e9edb51ffbf64bd80f41b7d30bc037aa8b157d430c276464c9b8768b67/hyperopt-0.1.tar.gz
+Collecting Keras==2.1.2 (from mlbox)
+  Using cached https://files.pythonhosted.org/packages/68/89/58ee5f56a9c26957d97217db41780ebedca3154392cb903c3f8a08a52208/Keras-2.1.2-py2.py3-none-any.whl
+Collecting pandas==0.21.0 (from mlbox)
+  Using cached https://files.pythonhosted.org/packages/84/4c/622301f99725c6da76ae8079cb6b9091d9098098bd6b4eac47fb502b32f4/pandas-0.21.0.tar.gz
+  Installing build dependencies ... error
+  Complete output from command /home/lenovo/anaconda/anaconda3/bin/python /home/lenovo/anaconda/anaconda3/lib/python3.7/site-packages/pip install --ignore-installed --no-user --prefix /tmp/pip-build-env-_kg5591h/overlay --no-warn-script-location --no-binary :none: --only-binary :none: -i https://pypi.org/simple -- wheel setuptools Cython "numpy==1.9.3; python_version=='3.5'" "numpy==1.12.1; python_version=='3.6'" "numpy==1.13.1; python_version>='3.7'":
+  Ignoring numpy: markers 'python_version == "3.5"' don't match your environment
+  Ignoring numpy: markers 'python_version == "3.6"' don't match your environment
+  Collecting wheel
+    Using cached https://files.pythonhosted.org/packages/96/ba/a4702cbb6a3a485239fbe9525443446203f00771af9ac000fa3ef2788201/wheel-0.33.1-py2.py3-none-any.whl
+  Collecting setuptools
+    Using cached https://files.pythonhosted.org/packages/ec/51/f45cea425fd5cb0b0380f5b0f048ebc1da5b417e48d304838c02d6288a1e/setuptools-41.0.1-py2.py3-none-any.whl
+  Collecting Cython
+    Using cached https://files.pythonhosted.org/packages/3e/ac/40ecc487c0ccb0cc9510f5f380a6af28af85fc770bca37cef398bb5f018f/Cython-0.29.7-cp37-cp37m-manylinux1_x86_64.whl
+  Collecting numpy==1.13.1
+    Using cached https://files.pythonhosted.org/packages/c0/3a/40967d9f5675fbb097ffec170f59c2ba19fc96373e73ad47c2cae9a30aed/numpy-1.13.1.zip
+  Building wheels for collected packages: numpy
+    Building wheel for numpy (setup.py): started
+    Building wheel for numpy (setup.py): still running...
+    Building wheel for numpy (setup.py): finished with status 'error'
+    Complete output from command /home/lenovo/anaconda/anaconda3/bin/python -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-fkqqkdfu/numpy/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/pip-wheel-dury3e6s --python-tag cp37:
+    Running from numpy source directory.
+    blas_opt_info:
+    blas_mkl_info:
+      FOUND:
+        libraries = ['mkl_rt', 'pthread']
+        library_dirs = ['/home/lenovo/anaconda/anaconda3/lib']
+        define_macros = [('SCIPY_MKL_H', None), ('HAVE_CBLAS', None)]
+        include_dirs = ['/usr/local/include', '/usr/include', '/home/lenovo/anaconda/anaconda3/include']
+  
+      FOUND:
+        libraries = ['mkl_rt', 'pthread']
+        library_dirs = ['/home/lenovo/anaconda/anaconda3/lib']
+        define_macros = [('SCIPY_MKL_H', None), ('HAVE_CBLAS', None)]
+        include_dirs = ['/usr/local/include', '/usr/include', '/home/lenovo/anaconda/anaconda3/include']
+  
+    /bin/sh: 1: svnversion: not found
+    non-existing path in 'numpy/distutils': 'site.cfg'
+    /bin/sh: 1: svnversion: not found
+    F2PY Version 2
+    lapack_opt_info:
+    lapack_mkl_info:
+      FOUND:
+        libraries = ['mkl_rt', 'pthread']
+        library_dirs = ['/home/lenovo/anaconda/anaconda3/lib']
+        define_macros = [('SCIPY_MKL_H', None), ('HAVE_CBLAS', None)]
+        include_dirs = ['/usr/local/include', '/usr/include', '/home/lenovo/anaconda/anaconda3/include']
+  
+      FOUND:
+        libraries = ['mkl_rt', 'pthread']
+        library_dirs = ['/home/lenovo/anaconda/anaconda3/lib']
+        define_macros = [('SCIPY_MKL_H', None), ('HAVE_CBLAS', None)]
+        include_dirs = ['/usr/local/include', '/usr/include', '/home/lenovo/anaconda/anaconda3/include']
+  
+    /home/lenovo/anaconda/anaconda3/lib/python3.7/distutils/dist.py:274: UserWarning: Unknown distribution option: 'define_macros'
+      warnings.warn(msg)
+    running bdist_wheel
+    running build
+    running config_cc
+    unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+    running config_fc
+    unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+    running build_src
+    build_src
+    building py_modules sources
+    creating build
+    creating build/src.linux-x86_64-3.7
+    creating build/src.linux-x86_64-3.7/numpy
+    creating build/src.linux-x86_64-3.7/numpy/distutils
+    building library "npymath" sources
+    customize Gnu95FCompiler
+    Could not locate executable gfortran
+    Could not locate executable f95
+    customize IntelFCompiler
+    Could not locate executable ifort
+    Could not locate executable ifc
+    customize LaheyFCompiler
+    Could not locate executable lf95
+    customize PGroupFCompiler
+    Could not locate executable pgfortran
+    customize AbsoftFCompiler
+    Could not locate executable f90
+    Could not locate executable f77
+    customize NAGFCompiler
+    customize VastFCompiler
+    customize CompaqFCompiler
+    Could not locate executable fort
+    customize IntelItaniumFCompiler
+    Could not locate executable efort
+    Could not locate executable efc
+    customize IntelEM64TFCompiler
+    customize GnuFCompiler
+    Could not locate executable g77
+    customize G95FCompiler
+    Could not locate executable g95
+    customize PathScaleFCompiler
+    Could not locate executable pathf95
+    don't know how to compile Fortran code on platform 'posix'
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:1:5: warning: conflicting types for built-in function 'exp' [-Wbuiltin-declaration-mismatch]
+     int exp (void);
+         ^~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    /home/lenovo/anaconda/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/bin/ld: _configtest.o: in function `main':
+    _configtest.c:(.text.startup.main+0x6): undefined reference to `exp'
+    collect2: error: ld returned 1 exit status
+    /home/lenovo/anaconda/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/bin/ld: _configtest.o: in function `main':
+    _configtest.c:(.text.startup.main+0x6): undefined reference to `exp'
+    collect2: error: ld returned 1 exit status
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:1:5: warning: conflicting types for built-in function 'exp' [-Wbuiltin-declaration-mismatch]
+     int exp (void);
+         ^~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    creating build/src.linux-x86_64-3.7/numpy/core
+    creating build/src.linux-x86_64-3.7/numpy/core/src
+    creating build/src.linux-x86_64-3.7/numpy/core/src/npymath
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/npymath/npy_math_internal.h
+      adding 'build/src.linux-x86_64-3.7/numpy/core/src/npymath' to include_dirs.
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/npymath/ieee754.c
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/npymath/npy_math_complex.c
+    None - nothing done with h_files = ['build/src.linux-x86_64-3.7/numpy/core/src/npymath/npy_math_internal.h']
+    building library "npysort" sources
+    creating build/src.linux-x86_64-3.7/numpy/core/src/npysort
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/npysort/quicksort.c
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/npysort/mergesort.c
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/npysort/heapsort.c
+    creating build/src.linux-x86_64-3.7/numpy/core/src/private
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/private/npy_partition.h
+      adding 'build/src.linux-x86_64-3.7/numpy/core/src/private' to include_dirs.
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/npysort/selection.c
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/private/npy_binsearch.h
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/npysort/binsearch.c
+    None - nothing done with h_files = ['build/src.linux-x86_64-3.7/numpy/core/src/private/npy_partition.h', 'build/src.linux-x86_64-3.7/numpy/core/src/private/npy_binsearch.h']
+    building extension "numpy.core._dummy" sources
+    Generating build/src.linux-x86_64-3.7/numpy/core/include/numpy/config.h
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:1:10: fatal error: sys/endian.h: No such file or directory
+     #include <sys/endian.h>
+              ^~~~~~~~~~~~~~
+    compilation terminated.
+    _configtest.c:1:10: fatal error: sys/endian.h: No such file or directory
+     #include <sys/endian.h>
+              ^~~~~~~~~~~~~~
+    compilation terminated.
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 4)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 8)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 8)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 16)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:7:12: error: 'SIZEOF_LONGDOUBLE' undeclared (first use in this function); did you mean 'SIZEOF_LONG_DOUBLE'?
+         (void) SIZEOF_LONGDOUBLE;
+                ^~~~~~~~~~~~~~~~~
+                SIZEOF_LONG_DOUBLE
+    _configtest.c:7:12: note: each undeclared identifier is reported only once for each function it appears in
+    _configtest.c: In function 'main':
+    _configtest.c:7:12: error: 'SIZEOF_LONGDOUBLE' undeclared (first use in this function); did you mean 'SIZEOF_LONG_DOUBLE'?
+         (void) SIZEOF_LONGDOUBLE;
+                ^~~~~~~~~~~~~~~~~
+                SIZEOF_LONG_DOUBLE
+    _configtest.c:7:12: note: each undeclared identifier is reported only once for each function it appears in
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 16)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 32)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:7:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:7:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 8)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:7:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:7:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 8)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:7:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:7:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 8)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 8)];
+                    ^~~~~~~~~~
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:1:5: warning: conflicting types for built-in function 'exp' [-Wbuiltin-declaration-mismatch]
+     int exp (void);
+         ^~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    /home/lenovo/anaconda/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/bin/ld: _configtest.o: in function `main':
+    _configtest.c:(.text.startup.main+0x6): undefined reference to `exp'
+    collect2: error: ld returned 1 exit status
+    /home/lenovo/anaconda/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/bin/ld: _configtest.o: in function `main':
+    _configtest.c:(.text.startup.main+0x6): undefined reference to `exp'
+    collect2: error: ld returned 1 exit status
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:1:5: warning: conflicting types for built-in function 'exp' [-Wbuiltin-declaration-mismatch]
+     int exp (void);
+         ^~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:1:5: warning: conflicting types for built-in function 'sin' [-Wbuiltin-declaration-mismatch]
+     int sin (void);
+         ^~~
+    _configtest.c:2:5: warning: conflicting types for built-in function 'cos' [-Wbuiltin-declaration-mismatch]
+     int cos (void);
+         ^~~
+    _configtest.c:3:5: warning: conflicting types for built-in function 'tan' [-Wbuiltin-declaration-mismatch]
+     int tan (void);
+         ^~~
+    _configtest.c:4:5: warning: conflicting types for built-in function 'sinh' [-Wbuiltin-declaration-mismatch]
+     int sinh (void);
+         ^~~~
+    _configtest.c:5:5: warning: conflicting types for built-in function 'cosh' [-Wbuiltin-declaration-mismatch]
+     int cosh (void);
+         ^~~~
+    _configtest.c:6:5: warning: conflicting types for built-in function 'tanh' [-Wbuiltin-declaration-mismatch]
+     int tanh (void);
+         ^~~~
+    _configtest.c:7:5: warning: conflicting types for built-in function 'fabs' [-Wbuiltin-declaration-mismatch]
+     int fabs (void);
+         ^~~~
+    _configtest.c:8:5: warning: conflicting types for built-in function 'floor' [-Wbuiltin-declaration-mismatch]
+     int floor (void);
+         ^~~~~
+    _configtest.c:9:5: warning: conflicting types for built-in function 'ceil' [-Wbuiltin-declaration-mismatch]
+     int ceil (void);
+         ^~~~
+    _configtest.c:10:5: warning: conflicting types for built-in function 'sqrt' [-Wbuiltin-declaration-mismatch]
+     int sqrt (void);
+         ^~~~
+    _configtest.c:11:5: warning: conflicting types for built-in function 'log10' [-Wbuiltin-declaration-mismatch]
+     int log10 (void);
+         ^~~~~
+    _configtest.c:12:5: warning: conflicting types for built-in function 'log' [-Wbuiltin-declaration-mismatch]
+     int log (void);
+         ^~~
+    _configtest.c:13:5: warning: conflicting types for built-in function 'exp' [-Wbuiltin-declaration-mismatch]
+     int exp (void);
+         ^~~
+    _configtest.c:14:5: warning: conflicting types for built-in function 'asin' [-Wbuiltin-declaration-mismatch]
+     int asin (void);
+         ^~~~
+    _configtest.c:15:5: warning: conflicting types for built-in function 'acos' [-Wbuiltin-declaration-mismatch]
+     int acos (void);
+         ^~~~
+    _configtest.c:16:5: warning: conflicting types for built-in function 'atan' [-Wbuiltin-declaration-mismatch]
+     int atan (void);
+         ^~~~
+    _configtest.c:17:5: warning: conflicting types for built-in function 'fmod' [-Wbuiltin-declaration-mismatch]
+     int fmod (void);
+         ^~~~
+    _configtest.c:18:5: warning: conflicting types for built-in function 'modf' [-Wbuiltin-declaration-mismatch]
+     int modf (void);
+         ^~~~
+    _configtest.c:19:5: warning: conflicting types for built-in function 'frexp' [-Wbuiltin-declaration-mismatch]
+     int frexp (void);
+         ^~~~~
+    _configtest.c:20:5: warning: conflicting types for built-in function 'ldexp' [-Wbuiltin-declaration-mismatch]
+     int ldexp (void);
+         ^~~~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:1:5: warning: conflicting types for built-in function 'rint' [-Wbuiltin-declaration-mismatch]
+     int rint (void);
+         ^~~~
+    _configtest.c:2:5: warning: conflicting types for built-in function 'trunc' [-Wbuiltin-declaration-mismatch]
+     int trunc (void);
+         ^~~~~
+    _configtest.c:3:5: warning: conflicting types for built-in function 'exp2' [-Wbuiltin-declaration-mismatch]
+     int exp2 (void);
+         ^~~~
+    _configtest.c:4:5: warning: conflicting types for built-in function 'log2' [-Wbuiltin-declaration-mismatch]
+     int log2 (void);
+         ^~~~
+    _configtest.c:5:5: warning: conflicting types for built-in function 'atan2' [-Wbuiltin-declaration-mismatch]
+     int atan2 (void);
+         ^~~~~
+    _configtest.c:6:5: warning: conflicting types for built-in function 'pow' [-Wbuiltin-declaration-mismatch]
+     int pow (void);
+         ^~~
+    _configtest.c:7:5: warning: conflicting types for built-in function 'nextafter' [-Wbuiltin-declaration-mismatch]
+     int nextafter (void);
+         ^~~~~~~~~
+    _configtest.c:10:5: warning: conflicting types for built-in function 'cbrt' [-Wbuiltin-declaration-mismatch]
+     int cbrt (void);
+         ^~~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:3: warning: statement with no effect [-Wunused-value]
+       __builtin_isnan(5.);
+       ^~~~~~~~~~~~~~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:3: warning: statement with no effect [-Wunused-value]
+       __builtin_isinf(5.);
+       ^~~~~~~~~~~~~~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:3: warning: statement with no effect [-Wunused-value]
+       __builtin_isfinite(5.);
+       ^~~~~~~~~~~~~~~~~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:3: warning: statement with no effect [-Wunused-value]
+       __builtin_bswap32(5u);
+       ^~~~~~~~~~~~~~~~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:3: warning: statement with no effect [-Wunused-value]
+       __builtin_bswap64(5u);
+       ^~~~~~~~~~~~~~~~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:5:3: warning: statement with no effect [-Wunused-value]
+       __builtin_expect(5, 0);
+       ^~~~~~~~~~~~~~~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:7:16: warning: unused variable 'r' [-Wunused-variable]
+       volatile int r = __builtin_cpu_supports("sse");
+                    ^
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:3:0: warning: ignoring #pragma clang diagnostic [-Wunknown-pragmas]
+     #pragma clang diagnostic error "-Wattributes"
+  
+    _configtest.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     main()
+     ^~~~
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:3:0: warning: ignoring #pragma clang diagnostic [-Wunknown-pragmas]
+     #pragma clang diagnostic error "-Wattributes"
+  
+    _configtest.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     main()
+     ^~~~
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:3:0: warning: ignoring #pragma clang diagnostic [-Wunknown-pragmas]
+     #pragma clang diagnostic error "-Wattributes"
+  
+    _configtest.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     main()
+     ^~~~
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:3:0: warning: ignoring #pragma clang diagnostic [-Wunknown-pragmas]
+     #pragma clang diagnostic error "-Wattributes"
+  
+    _configtest.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     main()
+     ^~~~
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:3:0: warning: ignoring #pragma clang diagnostic [-Wunknown-pragmas]
+     #pragma clang diagnostic error "-Wattributes"
+  
+    _configtest.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     main()
+     ^~~~
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:3:0: warning: ignoring #pragma clang diagnostic [-Wunknown-pragmas]
+     #pragma clang diagnostic error "-Wattributes"
+  
+    _configtest.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     main()
+     ^~~~
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:3:0: warning: ignoring #pragma clang diagnostic [-Wunknown-pragmas]
+     #pragma clang diagnostic error "-Wattributes"
+  
+    _configtest.c:5:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     int __declspec(thread) foo;
+         ^~~~~~~~~~
+    _configtest.c: In function '__declspec':
+    _configtest.c:5:24: error: expected declaration specifiers before 'foo'
+     int __declspec(thread) foo;
+                            ^~~
+    _configtest.c:9:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+     {
+     ^
+    _configtest.c:5:5: warning: type of 'thread' defaults to 'int' [-Wimplicit-int]
+     int __declspec(thread) foo;
+         ^~~~~~~~~~
+    _configtest.c:11:1: error: expected '{' at end of input
+     }
+     ^
+    _configtest.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+     }
+     ^
+    _configtest.c:3:0: warning: ignoring #pragma clang diagnostic [-Wunknown-pragmas]
+     #pragma clang diagnostic error "-Wattributes"
+  
+    _configtest.c:5:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     int __declspec(thread) foo;
+         ^~~~~~~~~~
+    _configtest.c: In function '__declspec':
+    _configtest.c:5:24: error: expected declaration specifiers before 'foo'
+     int __declspec(thread) foo;
+                            ^~~
+    _configtest.c:9:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+     {
+     ^
+    _configtest.c:5:5: warning: type of 'thread' defaults to 'int' [-Wimplicit-int]
+     int __declspec(thread) foo;
+         ^~~~~~~~~~
+    _configtest.c:11:1: error: expected '{' at end of input
+     }
+     ^
+    _configtest.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+     }
+     ^
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:1:5: warning: conflicting types for built-in function 'sinf' [-Wbuiltin-declaration-mismatch]
+     int sinf (void);
+         ^~~~
+    _configtest.c:2:5: warning: conflicting types for built-in function 'cosf' [-Wbuiltin-declaration-mismatch]
+     int cosf (void);
+         ^~~~
+    _configtest.c:3:5: warning: conflicting types for built-in function 'tanf' [-Wbuiltin-declaration-mismatch]
+     int tanf (void);
+         ^~~~
+    _configtest.c:4:5: warning: conflicting types for built-in function 'sinhf' [-Wbuiltin-declaration-mismatch]
+     int sinhf (void);
+         ^~~~~
+    _configtest.c:5:5: warning: conflicting types for built-in function 'coshf' [-Wbuiltin-declaration-mismatch]
+     int coshf (void);
+         ^~~~~
+    _configtest.c:6:5: warning: conflicting types for built-in function 'tanhf' [-Wbuiltin-declaration-mismatch]
+     int tanhf (void);
+         ^~~~~
+    _configtest.c:7:5: warning: conflicting types for built-in function 'fabsf' [-Wbuiltin-declaration-mismatch]
+     int fabsf (void);
+         ^~~~~
+    _configtest.c:8:5: warning: conflicting types for built-in function 'floorf' [-Wbuiltin-declaration-mismatch]
+     int floorf (void);
+         ^~~~~~
+    _configtest.c:9:5: warning: conflicting types for built-in function 'ceilf' [-Wbuiltin-declaration-mismatch]
+     int ceilf (void);
+         ^~~~~
+    _configtest.c:10:5: warning: conflicting types for built-in function 'rintf' [-Wbuiltin-declaration-mismatch]
+     int rintf (void);
+         ^~~~~
+    _configtest.c:11:5: warning: conflicting types for built-in function 'truncf' [-Wbuiltin-declaration-mismatch]
+     int truncf (void);
+         ^~~~~~
+    _configtest.c:12:5: warning: conflicting types for built-in function 'sqrtf' [-Wbuiltin-declaration-mismatch]
+     int sqrtf (void);
+         ^~~~~
+    _configtest.c:13:5: warning: conflicting types for built-in function 'log10f' [-Wbuiltin-declaration-mismatch]
+     int log10f (void);
+         ^~~~~~
+    _configtest.c:14:5: warning: conflicting types for built-in function 'logf' [-Wbuiltin-declaration-mismatch]
+     int logf (void);
+         ^~~~
+    _configtest.c:15:5: warning: conflicting types for built-in function 'log1pf' [-Wbuiltin-declaration-mismatch]
+     int log1pf (void);
+         ^~~~~~
+    _configtest.c:16:5: warning: conflicting types for built-in function 'expf' [-Wbuiltin-declaration-mismatch]
+     int expf (void);
+         ^~~~
+    _configtest.c:17:5: warning: conflicting types for built-in function 'expm1f' [-Wbuiltin-declaration-mismatch]
+     int expm1f (void);
+         ^~~~~~
+    _configtest.c:18:5: warning: conflicting types for built-in function 'asinf' [-Wbuiltin-declaration-mismatch]
+     int asinf (void);
+         ^~~~~
+    _configtest.c:19:5: warning: conflicting types for built-in function 'acosf' [-Wbuiltin-declaration-mismatch]
+     int acosf (void);
+         ^~~~~
+    _configtest.c:20:5: warning: conflicting types for built-in function 'atanf' [-Wbuiltin-declaration-mismatch]
+     int atanf (void);
+         ^~~~~
+    _configtest.c:21:5: warning: conflicting types for built-in function 'asinhf' [-Wbuiltin-declaration-mismatch]
+     int asinhf (void);
+         ^~~~~~
+    _configtest.c:22:5: warning: conflicting types for built-in function 'acoshf' [-Wbuiltin-declaration-mismatch]
+     int acoshf (void);
+         ^~~~~~
+    _configtest.c:23:5: warning: conflicting types for built-in function 'atanhf' [-Wbuiltin-declaration-mismatch]
+     int atanhf (void);
+         ^~~~~~
+    _configtest.c:24:5: warning: conflicting types for built-in function 'hypotf' [-Wbuiltin-declaration-mismatch]
+     int hypotf (void);
+         ^~~~~~
+    _configtest.c:25:5: warning: conflicting types for built-in function 'atan2f' [-Wbuiltin-declaration-mismatch]
+     int atan2f (void);
+         ^~~~~~
+    _configtest.c:26:5: warning: conflicting types for built-in function 'powf' [-Wbuiltin-declaration-mismatch]
+     int powf (void);
+         ^~~~
+    _configtest.c:27:5: warning: conflicting types for built-in function 'fmodf' [-Wbuiltin-declaration-mismatch]
+     int fmodf (void);
+         ^~~~~
+    _configtest.c:28:5: warning: conflicting types for built-in function 'modff' [-Wbuiltin-declaration-mismatch]
+     int modff (void);
+         ^~~~~
+    _configtest.c:29:5: warning: conflicting types for built-in function 'frexpf' [-Wbuiltin-declaration-mismatch]
+     int frexpf (void);
+         ^~~~~~
+    _configtest.c:30:5: warning: conflicting types for built-in function 'ldexpf' [-Wbuiltin-declaration-mismatch]
+     int ldexpf (void);
+         ^~~~~~
+    _configtest.c:31:5: warning: conflicting types for built-in function 'exp2f' [-Wbuiltin-declaration-mismatch]
+     int exp2f (void);
+         ^~~~~
+    _configtest.c:32:5: warning: conflicting types for built-in function 'log2f' [-Wbuiltin-declaration-mismatch]
+     int log2f (void);
+         ^~~~~
+    _configtest.c:33:5: warning: conflicting types for built-in function 'copysignf' [-Wbuiltin-declaration-mismatch]
+     int copysignf (void);
+         ^~~~~~~~~
+    _configtest.c:34:5: warning: conflicting types for built-in function 'nextafterf' [-Wbuiltin-declaration-mismatch]
+     int nextafterf (void);
+         ^~~~~~~~~~
+    _configtest.c:35:5: warning: conflicting types for built-in function 'cbrtf' [-Wbuiltin-declaration-mismatch]
+     int cbrtf (void);
+         ^~~~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:1:5: warning: conflicting types for built-in function 'sinl' [-Wbuiltin-declaration-mismatch]
+     int sinl (void);
+         ^~~~
+    _configtest.c:2:5: warning: conflicting types for built-in function 'cosl' [-Wbuiltin-declaration-mismatch]
+     int cosl (void);
+         ^~~~
+    _configtest.c:3:5: warning: conflicting types for built-in function 'tanl' [-Wbuiltin-declaration-mismatch]
+     int tanl (void);
+         ^~~~
+    _configtest.c:4:5: warning: conflicting types for built-in function 'sinhl' [-Wbuiltin-declaration-mismatch]
+     int sinhl (void);
+         ^~~~~
+    _configtest.c:5:5: warning: conflicting types for built-in function 'coshl' [-Wbuiltin-declaration-mismatch]
+     int coshl (void);
+         ^~~~~
+    _configtest.c:6:5: warning: conflicting types for built-in function 'tanhl' [-Wbuiltin-declaration-mismatch]
+     int tanhl (void);
+         ^~~~~
+    _configtest.c:7:5: warning: conflicting types for built-in function 'fabsl' [-Wbuiltin-declaration-mismatch]
+     int fabsl (void);
+         ^~~~~
+    _configtest.c:8:5: warning: conflicting types for built-in function 'floorl' [-Wbuiltin-declaration-mismatch]
+     int floorl (void);
+         ^~~~~~
+    _configtest.c:9:5: warning: conflicting types for built-in function 'ceill' [-Wbuiltin-declaration-mismatch]
+     int ceill (void);
+         ^~~~~
+    _configtest.c:10:5: warning: conflicting types for built-in function 'rintl' [-Wbuiltin-declaration-mismatch]
+     int rintl (void);
+         ^~~~~
+    _configtest.c:11:5: warning: conflicting types for built-in function 'truncl' [-Wbuiltin-declaration-mismatch]
+     int truncl (void);
+         ^~~~~~
+    _configtest.c:12:5: warning: conflicting types for built-in function 'sqrtl' [-Wbuiltin-declaration-mismatch]
+     int sqrtl (void);
+         ^~~~~
+    _configtest.c:13:5: warning: conflicting types for built-in function 'log10l' [-Wbuiltin-declaration-mismatch]
+     int log10l (void);
+         ^~~~~~
+    _configtest.c:14:5: warning: conflicting types for built-in function 'logl' [-Wbuiltin-declaration-mismatch]
+     int logl (void);
+         ^~~~
+    _configtest.c:15:5: warning: conflicting types for built-in function 'log1pl' [-Wbuiltin-declaration-mismatch]
+     int log1pl (void);
+         ^~~~~~
+    _configtest.c:16:5: warning: conflicting types for built-in function 'expl' [-Wbuiltin-declaration-mismatch]
+     int expl (void);
+         ^~~~
+    _configtest.c:17:5: warning: conflicting types for built-in function 'expm1l' [-Wbuiltin-declaration-mismatch]
+     int expm1l (void);
+         ^~~~~~
+    _configtest.c:18:5: warning: conflicting types for built-in function 'asinl' [-Wbuiltin-declaration-mismatch]
+     int asinl (void);
+         ^~~~~
+    _configtest.c:19:5: warning: conflicting types for built-in function 'acosl' [-Wbuiltin-declaration-mismatch]
+     int acosl (void);
+         ^~~~~
+    _configtest.c:20:5: warning: conflicting types for built-in function 'atanl' [-Wbuiltin-declaration-mismatch]
+     int atanl (void);
+         ^~~~~
+    _configtest.c:21:5: warning: conflicting types for built-in function 'asinhl' [-Wbuiltin-declaration-mismatch]
+     int asinhl (void);
+         ^~~~~~
+    _configtest.c:22:5: warning: conflicting types for built-in function 'acoshl' [-Wbuiltin-declaration-mismatch]
+     int acoshl (void);
+         ^~~~~~
+    _configtest.c:23:5: warning: conflicting types for built-in function 'atanhl' [-Wbuiltin-declaration-mismatch]
+     int atanhl (void);
+         ^~~~~~
+    _configtest.c:24:5: warning: conflicting types for built-in function 'hypotl' [-Wbuiltin-declaration-mismatch]
+     int hypotl (void);
+         ^~~~~~
+    _configtest.c:25:5: warning: conflicting types for built-in function 'atan2l' [-Wbuiltin-declaration-mismatch]
+     int atan2l (void);
+         ^~~~~~
+    _configtest.c:26:5: warning: conflicting types for built-in function 'powl' [-Wbuiltin-declaration-mismatch]
+     int powl (void);
+         ^~~~
+    _configtest.c:27:5: warning: conflicting types for built-in function 'fmodl' [-Wbuiltin-declaration-mismatch]
+     int fmodl (void);
+         ^~~~~
+    _configtest.c:28:5: warning: conflicting types for built-in function 'modfl' [-Wbuiltin-declaration-mismatch]
+     int modfl (void);
+         ^~~~~
+    _configtest.c:29:5: warning: conflicting types for built-in function 'frexpl' [-Wbuiltin-declaration-mismatch]
+     int frexpl (void);
+         ^~~~~~
+    _configtest.c:30:5: warning: conflicting types for built-in function 'ldexpl' [-Wbuiltin-declaration-mismatch]
+     int ldexpl (void);
+         ^~~~~~
+    _configtest.c:31:5: warning: conflicting types for built-in function 'exp2l' [-Wbuiltin-declaration-mismatch]
+     int exp2l (void);
+         ^~~~~
+    _configtest.c:32:5: warning: conflicting types for built-in function 'log2l' [-Wbuiltin-declaration-mismatch]
+     int log2l (void);
+         ^~~~~
+    _configtest.c:33:5: warning: conflicting types for built-in function 'copysignl' [-Wbuiltin-declaration-mismatch]
+     int copysignl (void);
+         ^~~~~~~~~
+    _configtest.c:34:5: warning: conflicting types for built-in function 'nextafterl' [-Wbuiltin-declaration-mismatch]
+     int nextafterl (void);
+         ^~~~~~~~~~
+    _configtest.c:35:5: warning: conflicting types for built-in function 'cbrtl' [-Wbuiltin-declaration-mismatch]
+     int cbrtl (void);
+         ^~~~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c: In function 'main':
+    _configtest.c:8:12: error: 'HAVE_DECL_SIGNBIT' undeclared (first use in this function); did you mean 'HAVE_DECL_ISNAN'?
+         (void) HAVE_DECL_SIGNBIT;
+                ^~~~~~~~~~~~~~~~~
+                HAVE_DECL_ISNAN
+    _configtest.c:8:12: note: each undeclared identifier is reported only once for each function it appears in
+    _configtest.c: In function 'main':
+    _configtest.c:8:12: error: 'HAVE_DECL_SIGNBIT' undeclared (first use in this function); did you mean 'HAVE_DECL_ISNAN'?
+         (void) HAVE_DECL_SIGNBIT;
+                ^~~~~~~~~~~~~~~~~
+                HAVE_DECL_ISNAN
+    _configtest.c:8:12: note: each undeclared identifier is reported only once for each function it appears in
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:1:5: warning: conflicting types for built-in function 'cabs' [-Wbuiltin-declaration-mismatch]
+     int cabs (void);
+         ^~~~
+    _configtest.c:2:5: warning: conflicting types for built-in function 'cacos' [-Wbuiltin-declaration-mismatch]
+     int cacos (void);
+         ^~~~~
+    _configtest.c:3:5: warning: conflicting types for built-in function 'cacosh' [-Wbuiltin-declaration-mismatch]
+     int cacosh (void);
+         ^~~~~~
+    _configtest.c:4:5: warning: conflicting types for built-in function 'carg' [-Wbuiltin-declaration-mismatch]
+     int carg (void);
+         ^~~~
+    _configtest.c:5:5: warning: conflicting types for built-in function 'casin' [-Wbuiltin-declaration-mismatch]
+     int casin (void);
+         ^~~~~
+    _configtest.c:6:5: warning: conflicting types for built-in function 'casinh' [-Wbuiltin-declaration-mismatch]
+     int casinh (void);
+         ^~~~~~
+    _configtest.c:7:5: warning: conflicting types for built-in function 'catan' [-Wbuiltin-declaration-mismatch]
+     int catan (void);
+         ^~~~~
+    _configtest.c:8:5: warning: conflicting types for built-in function 'catanh' [-Wbuiltin-declaration-mismatch]
+     int catanh (void);
+         ^~~~~~
+    _configtest.c:9:5: warning: conflicting types for built-in function 'ccos' [-Wbuiltin-declaration-mismatch]
+     int ccos (void);
+         ^~~~
+    _configtest.c:10:5: warning: conflicting types for built-in function 'ccosh' [-Wbuiltin-declaration-mismatch]
+     int ccosh (void);
+         ^~~~~
+    _configtest.c:11:5: warning: conflicting types for built-in function 'cexp' [-Wbuiltin-declaration-mismatch]
+     int cexp (void);
+         ^~~~
+    _configtest.c:12:5: warning: conflicting types for built-in function 'cimag' [-Wbuiltin-declaration-mismatch]
+     int cimag (void);
+         ^~~~~
+    _configtest.c:13:5: warning: conflicting types for built-in function 'clog' [-Wbuiltin-declaration-mismatch]
+     int clog (void);
+         ^~~~
+    _configtest.c:14:5: warning: conflicting types for built-in function 'conj' [-Wbuiltin-declaration-mismatch]
+     int conj (void);
+         ^~~~
+    _configtest.c:15:5: warning: conflicting types for built-in function 'cpow' [-Wbuiltin-declaration-mismatch]
+     int cpow (void);
+         ^~~~
+    _configtest.c:16:5: warning: conflicting types for built-in function 'cproj' [-Wbuiltin-declaration-mismatch]
+     int cproj (void);
+         ^~~~~
+    _configtest.c:17:5: warning: conflicting types for built-in function 'creal' [-Wbuiltin-declaration-mismatch]
+     int creal (void);
+         ^~~~~
+    _configtest.c:18:5: warning: conflicting types for built-in function 'csin' [-Wbuiltin-declaration-mismatch]
+     int csin (void);
+         ^~~~
+    _configtest.c:19:5: warning: conflicting types for built-in function 'csinh' [-Wbuiltin-declaration-mismatch]
+     int csinh (void);
+         ^~~~~
+    _configtest.c:20:5: warning: conflicting types for built-in function 'csqrt' [-Wbuiltin-declaration-mismatch]
+     int csqrt (void);
+         ^~~~~
+    _configtest.c:21:5: warning: conflicting types for built-in function 'ctan' [-Wbuiltin-declaration-mismatch]
+     int ctan (void);
+         ^~~~
+    _configtest.c:22:5: warning: conflicting types for built-in function 'ctanh' [-Wbuiltin-declaration-mismatch]
+     int ctanh (void);
+         ^~~~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:1:5: warning: conflicting types for built-in function 'cabsf' [-Wbuiltin-declaration-mismatch]
+     int cabsf (void);
+         ^~~~~
+    _configtest.c:2:5: warning: conflicting types for built-in function 'cacosf' [-Wbuiltin-declaration-mismatch]
+     int cacosf (void);
+         ^~~~~~
+    _configtest.c:3:5: warning: conflicting types for built-in function 'cacoshf' [-Wbuiltin-declaration-mismatch]
+     int cacoshf (void);
+         ^~~~~~~
+    _configtest.c:4:5: warning: conflicting types for built-in function 'cargf' [-Wbuiltin-declaration-mismatch]
+     int cargf (void);
+         ^~~~~
+    _configtest.c:5:5: warning: conflicting types for built-in function 'casinf' [-Wbuiltin-declaration-mismatch]
+     int casinf (void);
+         ^~~~~~
+    _configtest.c:6:5: warning: conflicting types for built-in function 'casinhf' [-Wbuiltin-declaration-mismatch]
+     int casinhf (void);
+         ^~~~~~~
+    _configtest.c:7:5: warning: conflicting types for built-in function 'catanf' [-Wbuiltin-declaration-mismatch]
+     int catanf (void);
+         ^~~~~~
+    _configtest.c:8:5: warning: conflicting types for built-in function 'catanhf' [-Wbuiltin-declaration-mismatch]
+     int catanhf (void);
+         ^~~~~~~
+    _configtest.c:9:5: warning: conflicting types for built-in function 'ccosf' [-Wbuiltin-declaration-mismatch]
+     int ccosf (void);
+         ^~~~~
+    _configtest.c:10:5: warning: conflicting types for built-in function 'ccoshf' [-Wbuiltin-declaration-mismatch]
+     int ccoshf (void);
+         ^~~~~~
+    _configtest.c:11:5: warning: conflicting types for built-in function 'cexpf' [-Wbuiltin-declaration-mismatch]
+     int cexpf (void);
+         ^~~~~
+    _configtest.c:12:5: warning: conflicting types for built-in function 'cimagf' [-Wbuiltin-declaration-mismatch]
+     int cimagf (void);
+         ^~~~~~
+    _configtest.c:13:5: warning: conflicting types for built-in function 'clogf' [-Wbuiltin-declaration-mismatch]
+     int clogf (void);
+         ^~~~~
+    _configtest.c:14:5: warning: conflicting types for built-in function 'conjf' [-Wbuiltin-declaration-mismatch]
+     int conjf (void);
+         ^~~~~
+    _configtest.c:15:5: warning: conflicting types for built-in function 'cpowf' [-Wbuiltin-declaration-mismatch]
+     int cpowf (void);
+         ^~~~~
+    _configtest.c:16:5: warning: conflicting types for built-in function 'cprojf' [-Wbuiltin-declaration-mismatch]
+     int cprojf (void);
+         ^~~~~~
+    _configtest.c:17:5: warning: conflicting types for built-in function 'crealf' [-Wbuiltin-declaration-mismatch]
+     int crealf (void);
+         ^~~~~~
+    _configtest.c:18:5: warning: conflicting types for built-in function 'csinf' [-Wbuiltin-declaration-mismatch]
+     int csinf (void);
+         ^~~~~
+    _configtest.c:19:5: warning: conflicting types for built-in function 'csinhf' [-Wbuiltin-declaration-mismatch]
+     int csinhf (void);
+         ^~~~~~
+    _configtest.c:20:5: warning: conflicting types for built-in function 'csqrtf' [-Wbuiltin-declaration-mismatch]
+     int csqrtf (void);
+         ^~~~~~
+    _configtest.c:21:5: warning: conflicting types for built-in function 'ctanf' [-Wbuiltin-declaration-mismatch]
+     int ctanf (void);
+         ^~~~~
+    _configtest.c:22:5: warning: conflicting types for built-in function 'ctanhf' [-Wbuiltin-declaration-mismatch]
+     int ctanhf (void);
+         ^~~~~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:1:5: warning: conflicting types for built-in function 'cabsl' [-Wbuiltin-declaration-mismatch]
+     int cabsl (void);
+         ^~~~~
+    _configtest.c:2:5: warning: conflicting types for built-in function 'cacosl' [-Wbuiltin-declaration-mismatch]
+     int cacosl (void);
+         ^~~~~~
+    _configtest.c:3:5: warning: conflicting types for built-in function 'cacoshl' [-Wbuiltin-declaration-mismatch]
+     int cacoshl (void);
+         ^~~~~~~
+    _configtest.c:4:5: warning: conflicting types for built-in function 'cargl' [-Wbuiltin-declaration-mismatch]
+     int cargl (void);
+         ^~~~~
+    _configtest.c:5:5: warning: conflicting types for built-in function 'casinl' [-Wbuiltin-declaration-mismatch]
+     int casinl (void);
+         ^~~~~~
+    _configtest.c:6:5: warning: conflicting types for built-in function 'casinhl' [-Wbuiltin-declaration-mismatch]
+     int casinhl (void);
+         ^~~~~~~
+    _configtest.c:7:5: warning: conflicting types for built-in function 'catanl' [-Wbuiltin-declaration-mismatch]
+     int catanl (void);
+         ^~~~~~
+    _configtest.c:8:5: warning: conflicting types for built-in function 'catanhl' [-Wbuiltin-declaration-mismatch]
+     int catanhl (void);
+         ^~~~~~~
+    _configtest.c:9:5: warning: conflicting types for built-in function 'ccosl' [-Wbuiltin-declaration-mismatch]
+     int ccosl (void);
+         ^~~~~
+    _configtest.c:10:5: warning: conflicting types for built-in function 'ccoshl' [-Wbuiltin-declaration-mismatch]
+     int ccoshl (void);
+         ^~~~~~
+    _configtest.c:11:5: warning: conflicting types for built-in function 'cexpl' [-Wbuiltin-declaration-mismatch]
+     int cexpl (void);
+         ^~~~~
+    _configtest.c:12:5: warning: conflicting types for built-in function 'cimagl' [-Wbuiltin-declaration-mismatch]
+     int cimagl (void);
+         ^~~~~~
+    _configtest.c:13:5: warning: conflicting types for built-in function 'clogl' [-Wbuiltin-declaration-mismatch]
+     int clogl (void);
+         ^~~~~
+    _configtest.c:14:5: warning: conflicting types for built-in function 'conjl' [-Wbuiltin-declaration-mismatch]
+     int conjl (void);
+         ^~~~~
+    _configtest.c:15:5: warning: conflicting types for built-in function 'cpowl' [-Wbuiltin-declaration-mismatch]
+     int cpowl (void);
+         ^~~~~
+    _configtest.c:16:5: warning: conflicting types for built-in function 'cprojl' [-Wbuiltin-declaration-mismatch]
+     int cprojl (void);
+         ^~~~~~
+    _configtest.c:17:5: warning: conflicting types for built-in function 'creall' [-Wbuiltin-declaration-mismatch]
+     int creall (void);
+         ^~~~~~
+    _configtest.c:18:5: warning: conflicting types for built-in function 'csinl' [-Wbuiltin-declaration-mismatch]
+     int csinl (void);
+         ^~~~~
+    _configtest.c:19:5: warning: conflicting types for built-in function 'csinhl' [-Wbuiltin-declaration-mismatch]
+     int csinhl (void);
+         ^~~~~~
+    _configtest.c:20:5: warning: conflicting types for built-in function 'csqrtl' [-Wbuiltin-declaration-mismatch]
+     int csqrtl (void);
+         ^~~~~~
+    _configtest.c:21:5: warning: conflicting types for built-in function 'ctanl' [-Wbuiltin-declaration-mismatch]
+     int ctanl (void);
+         ^~~~~
+    _configtest.c:22:5: warning: conflicting types for built-in function 'ctanhl' [-Wbuiltin-declaration-mismatch]
+     int ctanhl (void);
+         ^~~~~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:2:12: warning: 'static_func' defined but not used [-Wunused-function]
+     static int static_func (char * restrict a)
+                ^~~~~~~~~~~
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    removing: _configtest.c _configtest.o
+    File: build/src.linux-x86_64-3.7/numpy/core/include/numpy/config.h
+    #define HAVE_ENDIAN_H 1
+    #define SIZEOF_PY_INTPTR_T 8
+    #define SIZEOF_OFF_T 8
+    #define SIZEOF_PY_LONG_LONG 8
+    #define MATHLIB m
+    #define HAVE_SIN 1
+    #define HAVE_COS 1
+    #define HAVE_TAN 1
+    #define HAVE_SINH 1
+    #define HAVE_COSH 1
+    #define HAVE_TANH 1
+    #define HAVE_FABS 1
+    #define HAVE_FLOOR 1
+    #define HAVE_CEIL 1
+    #define HAVE_SQRT 1
+    #define HAVE_LOG10 1
+    #define HAVE_LOG 1
+    #define HAVE_EXP 1
+    #define HAVE_ASIN 1
+    #define HAVE_ACOS 1
+    #define HAVE_ATAN 1
+    #define HAVE_FMOD 1
+    #define HAVE_MODF 1
+    #define HAVE_FREXP 1
+    #define HAVE_LDEXP 1
+    #define HAVE_RINT 1
+    #define HAVE_TRUNC 1
+    #define HAVE_EXP2 1
+    #define HAVE_LOG2 1
+    #define HAVE_ATAN2 1
+    #define HAVE_POW 1
+    #define HAVE_NEXTAFTER 1
+    #define HAVE_STRTOLL 1
+    #define HAVE_STRTOULL 1
+    #define HAVE_CBRT 1
+    #define HAVE_STRTOLD_L 1
+    #define HAVE_FALLOCATE 1
+    #define HAVE_BACKTRACE 1
+    #define HAVE_XMMINTRIN_H 1
+    #define HAVE_EMMINTRIN_H 1
+    #define HAVE_FEATURES_H 1
+    #define HAVE_XLOCALE_H 1
+    #define HAVE_DLFCN_H 1
+    #define HAVE___BUILTIN_ISNAN 1
+    #define HAVE___BUILTIN_ISINF 1
+    #define HAVE___BUILTIN_ISFINITE 1
+    #define HAVE___BUILTIN_BSWAP32 1
+    #define HAVE___BUILTIN_BSWAP64 1
+    #define HAVE___BUILTIN_EXPECT 1
+    #define HAVE___BUILTIN_MUL_OVERFLOW 1
+    #define HAVE___BUILTIN_CPU_SUPPORTS 1
+    #define HAVE__M_FROM_INT64 1
+    #define HAVE__MM_LOAD_PS 1
+    #define HAVE__MM_PREFETCH 1
+    #define HAVE__MM_LOAD_PD 1
+    #define HAVE___BUILTIN_PREFETCH 1
+    #define HAVE_LINK_AVX 1
+    #define HAVE_LINK_AVX2 1
+    #define HAVE_ATTRIBUTE_OPTIMIZE_UNROLL_LOOPS 1
+    #define HAVE_ATTRIBUTE_OPTIMIZE_OPT_3 1
+    #define HAVE_ATTRIBUTE_NONNULL 1
+    #define HAVE_ATTRIBUTE_TARGET_AVX 1
+    #define HAVE_ATTRIBUTE_TARGET_AVX2 1
+    #define HAVE___THREAD 1
+    #define HAVE_SINF 1
+    #define HAVE_COSF 1
+    #define HAVE_TANF 1
+    #define HAVE_SINHF 1
+    #define HAVE_COSHF 1
+    #define HAVE_TANHF 1
+    #define HAVE_FABSF 1
+    #define HAVE_FLOORF 1
+    #define HAVE_CEILF 1
+    #define HAVE_RINTF 1
+    #define HAVE_TRUNCF 1
+    #define HAVE_SQRTF 1
+    #define HAVE_LOG10F 1
+    #define HAVE_LOGF 1
+    #define HAVE_LOG1PF 1
+    #define HAVE_EXPF 1
+    #define HAVE_EXPM1F 1
+    #define HAVE_ASINF 1
+    #define HAVE_ACOSF 1
+    #define HAVE_ATANF 1
+    #define HAVE_ASINHF 1
+    #define HAVE_ACOSHF 1
+    #define HAVE_ATANHF 1
+    #define HAVE_HYPOTF 1
+    #define HAVE_ATAN2F 1
+    #define HAVE_POWF 1
+    #define HAVE_FMODF 1
+    #define HAVE_MODFF 1
+    #define HAVE_FREXPF 1
+    #define HAVE_LDEXPF 1
+    #define HAVE_EXP2F 1
+    #define HAVE_LOG2F 1
+    #define HAVE_COPYSIGNF 1
+    #define HAVE_NEXTAFTERF 1
+    #define HAVE_CBRTF 1
+    #define HAVE_SINL 1
+    #define HAVE_COSL 1
+    #define HAVE_TANL 1
+    #define HAVE_SINHL 1
+    #define HAVE_COSHL 1
+    #define HAVE_TANHL 1
+    #define HAVE_FABSL 1
+    #define HAVE_FLOORL 1
+    #define HAVE_CEILL 1
+    #define HAVE_RINTL 1
+    #define HAVE_TRUNCL 1
+    #define HAVE_SQRTL 1
+    #define HAVE_LOG10L 1
+    #define HAVE_LOGL 1
+    #define HAVE_LOG1PL 1
+    #define HAVE_EXPL 1
+    #define HAVE_EXPM1L 1
+    #define HAVE_ASINL 1
+    #define HAVE_ACOSL 1
+    #define HAVE_ATANL 1
+    #define HAVE_ASINHL 1
+    #define HAVE_ACOSHL 1
+    #define HAVE_ATANHL 1
+    #define HAVE_HYPOTL 1
+    #define HAVE_ATAN2L 1
+    #define HAVE_POWL 1
+    #define HAVE_FMODL 1
+    #define HAVE_MODFL 1
+    #define HAVE_FREXPL 1
+    #define HAVE_LDEXPL 1
+    #define HAVE_EXP2L 1
+    #define HAVE_LOG2L 1
+    #define HAVE_COPYSIGNL 1
+    #define HAVE_NEXTAFTERL 1
+    #define HAVE_CBRTL 1
+    #define HAVE_DECL_SIGNBIT
+    #define HAVE_COMPLEX_H 1
+    #define HAVE_CABS 1
+    #define HAVE_CACOS 1
+    #define HAVE_CACOSH 1
+    #define HAVE_CARG 1
+    #define HAVE_CASIN 1
+    #define HAVE_CASINH 1
+    #define HAVE_CATAN 1
+    #define HAVE_CATANH 1
+    #define HAVE_CCOS 1
+    #define HAVE_CCOSH 1
+    #define HAVE_CEXP 1
+    #define HAVE_CIMAG 1
+    #define HAVE_CLOG 1
+    #define HAVE_CONJ 1
+    #define HAVE_CPOW 1
+    #define HAVE_CPROJ 1
+    #define HAVE_CREAL 1
+    #define HAVE_CSIN 1
+    #define HAVE_CSINH 1
+    #define HAVE_CSQRT 1
+    #define HAVE_CTAN 1
+    #define HAVE_CTANH 1
+    #define HAVE_CABSF 1
+    #define HAVE_CACOSF 1
+    #define HAVE_CACOSHF 1
+    #define HAVE_CARGF 1
+    #define HAVE_CASINF 1
+    #define HAVE_CASINHF 1
+    #define HAVE_CATANF 1
+    #define HAVE_CATANHF 1
+    #define HAVE_CCOSF 1
+    #define HAVE_CCOSHF 1
+    #define HAVE_CEXPF 1
+    #define HAVE_CIMAGF 1
+    #define HAVE_CLOGF 1
+    #define HAVE_CONJF 1
+    #define HAVE_CPOWF 1
+    #define HAVE_CPROJF 1
+    #define HAVE_CREALF 1
+    #define HAVE_CSINF 1
+    #define HAVE_CSINHF 1
+    #define HAVE_CSQRTF 1
+    #define HAVE_CTANF 1
+    #define HAVE_CTANHF 1
+    #define HAVE_CABSL 1
+    #define HAVE_CACOSL 1
+    #define HAVE_CACOSHL 1
+    #define HAVE_CARGL 1
+    #define HAVE_CASINL 1
+    #define HAVE_CASINHL 1
+    #define HAVE_CATANL 1
+    #define HAVE_CATANHL 1
+    #define HAVE_CCOSL 1
+    #define HAVE_CCOSHL 1
+    #define HAVE_CEXPL 1
+    #define HAVE_CIMAGL 1
+    #define HAVE_CLOGL 1
+    #define HAVE_CONJL 1
+    #define HAVE_CPOWL 1
+    #define HAVE_CPROJL 1
+    #define HAVE_CREALL 1
+    #define HAVE_CSINL 1
+    #define HAVE_CSINHL 1
+    #define HAVE_CSQRTL 1
+    #define HAVE_CTANL 1
+    #define HAVE_CTANHL 1
+    #define NPY_RESTRICT restrict
+    #define NPY_RELAXED_STRIDES_CHECKING 1
+    #define HAVE_LDOUBLE_INTEL_EXTENDED_16_BYTES_LE 1
+    #define NPY_PY3K 1
+    #ifndef __cplusplus
+    /* #undef inline */
+    #endif
+  
+    #ifndef _NPY_NPY_CONFIG_H_
+    #error config.h should never be included directly, include npy_config.h instead
+    #endif
+  
+    EOF
+      adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/config.h' to sources.
+    Generating build/src.linux-x86_64-3.7/numpy/core/include/numpy/_numpyconfig.h
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:1:5: warning: conflicting types for built-in function 'exp' [-Wbuiltin-declaration-mismatch]
+     int exp (void);
+         ^~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+    /home/lenovo/anaconda/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/bin/ld: _configtest.o: in function `main':
+    _configtest.c:(.text.startup.main+0x6): undefined reference to `exp'
+    collect2: error: ld returned 1 exit status
+    /home/lenovo/anaconda/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/bin/ld: _configtest.o: in function `main':
+    _configtest.c:(.text.startup.main+0x6): undefined reference to `exp'
+    collect2: error: ld returned 1 exit status
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:1:5: warning: conflicting types for built-in function 'exp' [-Wbuiltin-declaration-mismatch]
+     int exp (void);
+         ^~~
+    /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+    x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+    _configtest.c:3:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     main()
+     ^~~~
+    success!
+    removing: _configtest.c _configtest.o
+    File: build/src.linux-x86_64-3.7/numpy/core/include/numpy/_numpyconfig.h
+    #define NPY_HAVE_ENDIAN_H 1
+    #define NPY_SIZEOF_SHORT SIZEOF_SHORT
+    #define NPY_SIZEOF_INT SIZEOF_INT
+    #define NPY_SIZEOF_LONG SIZEOF_LONG
+    #define NPY_SIZEOF_FLOAT 4
+    #define NPY_SIZEOF_COMPLEX_FLOAT 8
+    #define NPY_SIZEOF_DOUBLE 8
+    #define NPY_SIZEOF_COMPLEX_DOUBLE 16
+    #define NPY_SIZEOF_LONGDOUBLE 16
+    #define NPY_SIZEOF_COMPLEX_LONGDOUBLE 32
+    #define NPY_SIZEOF_PY_INTPTR_T 8
+    #define NPY_SIZEOF_OFF_T 8
+    #define NPY_SIZEOF_PY_LONG_LONG 8
+    #define NPY_SIZEOF_LONGLONG 8
+    #define NPY_NO_SMP 0
+    #define NPY_HAVE_DECL_ISNAN
+    #define NPY_HAVE_DECL_ISINF
+    #define NPY_HAVE_DECL_ISFINITE
+    #define NPY_HAVE_DECL_SIGNBIT
+    #define NPY_USE_C99_COMPLEX 1
+    #define NPY_HAVE_COMPLEX_DOUBLE 1
+    #define NPY_HAVE_COMPLEX_FLOAT 1
+    #define NPY_HAVE_COMPLEX_LONG_DOUBLE 1
+    #define NPY_RELAXED_STRIDES_CHECKING 1
+    #define NPY_USE_C99_FORMATS 1
+    #define NPY_VISIBILITY_HIDDEN __attribute__((visibility("hidden")))
+    #define NPY_ABI_VERSION 0x01000009
+    #define NPY_API_VERSION 0x0000000B
+  
+    #ifndef __STDC_FORMAT_MACROS
+    #define __STDC_FORMAT_MACROS 1
+    #endif
+  
+    EOF
+      adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/_numpyconfig.h' to sources.
+    executing numpy/core/code_generators/generate_numpy_api.py
+      adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/__multiarray_api.h' to sources.
+    numpy.core - nothing done with h_files = ['build/src.linux-x86_64-3.7/numpy/core/include/numpy/config.h', 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/_numpyconfig.h', 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/__multiarray_api.h']
+    building extension "numpy.core.multiarray" sources
+      adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/config.h' to sources.
+      adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/_numpyconfig.h' to sources.
+    executing numpy/core/code_generators/generate_numpy_api.py
+      adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/__multiarray_api.h' to sources.
+    creating build/src.linux-x86_64-3.7/numpy/core/src/multiarray
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/multiarray/arraytypes.c
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/multiarray/einsum.c
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/multiarray/lowlevel_strided_loops.c
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/multiarray/nditer_templ.c
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/multiarray/scalartypes.c
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/private/templ_common.h
+      adding 'build/src.linux-x86_64-3.7/numpy/core/src/private' to include_dirs.
+    numpy.core - nothing done with h_files = ['build/src.linux-x86_64-3.7/numpy/core/src/private/templ_common.h', 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/config.h', 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/_numpyconfig.h', 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/__multiarray_api.h']
+    building extension "numpy.core.umath" sources
+      adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/config.h' to sources.
+      adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/_numpyconfig.h' to sources.
+    executing numpy/core/code_generators/generate_ufunc_api.py
+      adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/__ufunc_api.h' to sources.
+    creating build/src.linux-x86_64-3.7/numpy/core/src/umath
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/umath/funcs.inc
+      adding 'build/src.linux-x86_64-3.7/numpy/core/src/umath' to include_dirs.
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/umath/simd.inc
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/umath/loops.h
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/umath/loops.c
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/umath/scalarmath.c
+    numpy.core - nothing done with h_files = ['build/src.linux-x86_64-3.7/numpy/core/src/umath/funcs.inc', 'build/src.linux-x86_64-3.7/numpy/core/src/umath/simd.inc', 'build/src.linux-x86_64-3.7/numpy/core/src/umath/loops.h', 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/config.h', 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/_numpyconfig.h', 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/__ufunc_api.h']
+    building extension "numpy.core.umath_tests" sources
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/umath/umath_tests.c
+    building extension "numpy.core.test_rational" sources
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/umath/test_rational.c
+    building extension "numpy.core.struct_ufunc_test" sources
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/umath/struct_ufunc_test.c
+    building extension "numpy.core.multiarray_tests" sources
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/multiarray/multiarray_tests.c
+    building extension "numpy.core.operand_flag_tests" sources
+    conv_template:> build/src.linux-x86_64-3.7/numpy/core/src/umath/operand_flag_tests.c
+    building extension "numpy.fft.fftpack_lite" sources
+    building extension "numpy.linalg.lapack_lite" sources
+    creating build/src.linux-x86_64-3.7/numpy/linalg
+      adding 'numpy/linalg/lapack_lite/python_xerbla.c' to sources.
+    building extension "numpy.linalg._umath_linalg" sources
+      adding 'numpy/linalg/lapack_lite/python_xerbla.c' to sources.
+    conv_template:> build/src.linux-x86_64-3.7/numpy/linalg/umath_linalg.c
+    building extension "numpy.random.mtrand" sources
+    creating build/src.linux-x86_64-3.7/numpy/random
+    building data_files sources
+    build_src: building npy-pkg config files
+    running build_py
+    creating build/lib.linux-x86_64-3.7
+    creating build/lib.linux-x86_64-3.7/numpy
+    copying numpy/_distributor_init.py -> build/lib.linux-x86_64-3.7/numpy
+    copying numpy/ctypeslib.py -> build/lib.linux-x86_64-3.7/numpy
+    copying numpy/matlib.py -> build/lib.linux-x86_64-3.7/numpy
+    copying numpy/_globals.py -> build/lib.linux-x86_64-3.7/numpy
+    copying numpy/setup.py -> build/lib.linux-x86_64-3.7/numpy
+    copying numpy/version.py -> build/lib.linux-x86_64-3.7/numpy
+    copying numpy/add_newdocs.py -> build/lib.linux-x86_64-3.7/numpy
+    copying numpy/__init__.py -> build/lib.linux-x86_64-3.7/numpy
+    copying numpy/_import_tools.py -> build/lib.linux-x86_64-3.7/numpy
+    copying numpy/dual.py -> build/lib.linux-x86_64-3.7/numpy
+    copying build/src.linux-x86_64-3.7/numpy/__config__.py -> build/lib.linux-x86_64-3.7/numpy
+    creating build/lib.linux-x86_64-3.7/numpy/compat
+    copying numpy/compat/py3k.py -> build/lib.linux-x86_64-3.7/numpy/compat
+    copying numpy/compat/_inspect.py -> build/lib.linux-x86_64-3.7/numpy/compat
+    copying numpy/compat/setup.py -> build/lib.linux-x86_64-3.7/numpy/compat
+    copying numpy/compat/__init__.py -> build/lib.linux-x86_64-3.7/numpy/compat
+    creating build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/_methods.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/getlimits.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/numeric.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/numerictypes.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/einsumfunc.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/function_base.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/_internal.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/fromnumeric.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/machar.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/info.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/setup.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/arrayprint.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/defchararray.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/records.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/setup_common.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/__init__.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/memmap.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/shape_base.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/cversions.py -> build/lib.linux-x86_64-3.7/numpy/core
+    copying numpy/core/code_generators/generate_numpy_api.py -> build/lib.linux-x86_64-3.7/numpy/core
+    creating build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/ccompiler.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/npy_pkg_config.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/msvc9compiler.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/from_template.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/numpy_distribution.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/lib2def.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/extension.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/intelccompiler.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/line_endings.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/compat.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/conv_template.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/mingw32ccompiler.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/exec_command.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/info.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/setup.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/unixccompiler.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/pathccompiler.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/core.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/system_info.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/__init__.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/misc_util.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/msvccompiler.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/__version__.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/log.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/cpuinfo.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying numpy/distutils/environment.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    copying build/src.linux-x86_64-3.7/numpy/distutils/__config__.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+    creating build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/build_src.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/build_clib.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/install_headers.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/build_scripts.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/autodist.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/build.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/build_ext.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/config_compiler.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/develop.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/install.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/bdist_rpm.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/build_py.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/install_clib.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/config.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/install_data.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/__init__.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/sdist.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    copying numpy/distutils/command/egg_info.py -> build/lib.linux-x86_64-3.7/numpy/distutils/command
+    creating build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    copying numpy/distutils/fcompiler/absoft.py -> build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    copying numpy/distutils/fcompiler/compaq.py -> build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    copying numpy/distutils/fcompiler/mips.py -> build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    copying numpy/distutils/fcompiler/sun.py -> build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    copying numpy/distutils/fcompiler/hpux.py -> build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    copying numpy/distutils/fcompiler/pathf95.py -> build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    copying numpy/distutils/fcompiler/nag.py -> build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    copying numpy/distutils/fcompiler/pg.py -> build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    copying numpy/distutils/fcompiler/intel.py -> build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    copying numpy/distutils/fcompiler/none.py -> build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    copying numpy/distutils/fcompiler/ibm.py -> build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    copying numpy/distutils/fcompiler/gnu.py -> build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    copying numpy/distutils/fcompiler/g95.py -> build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    copying numpy/distutils/fcompiler/__init__.py -> build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    copying numpy/distutils/fcompiler/vast.py -> build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    copying numpy/distutils/fcompiler/lahey.py -> build/lib.linux-x86_64-3.7/numpy/distutils/fcompiler
+    creating build/lib.linux-x86_64-3.7/numpy/doc
+    copying numpy/doc/misc.py -> build/lib.linux-x86_64-3.7/numpy/doc
+    copying numpy/doc/indexing.py -> build/lib.linux-x86_64-3.7/numpy/doc
+    copying numpy/doc/byteswapping.py -> build/lib.linux-x86_64-3.7/numpy/doc
+    copying numpy/doc/creation.py -> build/lib.linux-x86_64-3.7/numpy/doc
+    copying numpy/doc/structured_arrays.py -> build/lib.linux-x86_64-3.7/numpy/doc
+    copying numpy/doc/broadcasting.py -> build/lib.linux-x86_64-3.7/numpy/doc
+    copying numpy/doc/ufuncs.py -> build/lib.linux-x86_64-3.7/numpy/doc
+    copying numpy/doc/basics.py -> build/lib.linux-x86_64-3.7/numpy/doc
+    copying numpy/doc/glossary.py -> build/lib.linux-x86_64-3.7/numpy/doc
+    copying numpy/doc/__init__.py -> build/lib.linux-x86_64-3.7/numpy/doc
+    copying numpy/doc/subclassing.py -> build/lib.linux-x86_64-3.7/numpy/doc
+    copying numpy/doc/internals.py -> build/lib.linux-x86_64-3.7/numpy/doc
+    copying numpy/doc/constants.py -> build/lib.linux-x86_64-3.7/numpy/doc
+    creating build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/f2py_testing.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/cfuncs.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/f2py2e.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/diagnose.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/crackfortran.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/rules.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/__main__.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/common_rules.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/f90mod_rules.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/info.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/setup.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/use_rules.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/capi_maps.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/func2subr.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/__init__.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/__version__.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/auxfuncs.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    copying numpy/f2py/cb_rules.py -> build/lib.linux-x86_64-3.7/numpy/f2py
+    creating build/lib.linux-x86_64-3.7/numpy/fft
+    copying numpy/fft/helper.py -> build/lib.linux-x86_64-3.7/numpy/fft
+    copying numpy/fft/info.py -> build/lib.linux-x86_64-3.7/numpy/fft
+    copying numpy/fft/fftpack.py -> build/lib.linux-x86_64-3.7/numpy/fft
+    copying numpy/fft/setup.py -> build/lib.linux-x86_64-3.7/numpy/fft
+    copying numpy/fft/__init__.py -> build/lib.linux-x86_64-3.7/numpy/fft
+    creating build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/format.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/_iotools.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/index_tricks.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/utils.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/type_check.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/arraypad.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/stride_tricks.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/function_base.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/_version.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/financial.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/twodim_base.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/polynomial.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/mixins.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/_datasource.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/nanfunctions.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/info.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/setup.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/arraysetops.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/user_array.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/arrayterator.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/ufunclike.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/__init__.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/recfunctions.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/scimath.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/shape_base.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    copying numpy/lib/npyio.py -> build/lib.linux-x86_64-3.7/numpy/lib
+    creating build/lib.linux-x86_64-3.7/numpy/linalg
+    copying numpy/linalg/linalg.py -> build/lib.linux-x86_64-3.7/numpy/linalg
+    copying numpy/linalg/info.py -> build/lib.linux-x86_64-3.7/numpy/linalg
+    copying numpy/linalg/setup.py -> build/lib.linux-x86_64-3.7/numpy/linalg
+    copying numpy/linalg/__init__.py -> build/lib.linux-x86_64-3.7/numpy/linalg
+    creating build/lib.linux-x86_64-3.7/numpy/ma
+    copying numpy/ma/extras.py -> build/lib.linux-x86_64-3.7/numpy/ma
+    copying numpy/ma/mrecords.py -> build/lib.linux-x86_64-3.7/numpy/ma
+    copying numpy/ma/setup.py -> build/lib.linux-x86_64-3.7/numpy/ma
+    copying numpy/ma/testutils.py -> build/lib.linux-x86_64-3.7/numpy/ma
+    copying numpy/ma/version.py -> build/lib.linux-x86_64-3.7/numpy/ma
+    copying numpy/ma/timer_comparison.py -> build/lib.linux-x86_64-3.7/numpy/ma
+    copying numpy/ma/core.py -> build/lib.linux-x86_64-3.7/numpy/ma
+    copying numpy/ma/__init__.py -> build/lib.linux-x86_64-3.7/numpy/ma
+    copying numpy/ma/bench.py -> build/lib.linux-x86_64-3.7/numpy/ma
+    creating build/lib.linux-x86_64-3.7/numpy/matrixlib
+    copying numpy/matrixlib/defmatrix.py -> build/lib.linux-x86_64-3.7/numpy/matrixlib
+    copying numpy/matrixlib/setup.py -> build/lib.linux-x86_64-3.7/numpy/matrixlib
+    copying numpy/matrixlib/__init__.py -> build/lib.linux-x86_64-3.7/numpy/matrixlib
+    creating build/lib.linux-x86_64-3.7/numpy/polynomial
+    copying numpy/polynomial/laguerre.py -> build/lib.linux-x86_64-3.7/numpy/polynomial
+    copying numpy/polynomial/_polybase.py -> build/lib.linux-x86_64-3.7/numpy/polynomial
+    copying numpy/polynomial/polynomial.py -> build/lib.linux-x86_64-3.7/numpy/polynomial
+    copying numpy/polynomial/legendre.py -> build/lib.linux-x86_64-3.7/numpy/polynomial
+    copying numpy/polynomial/hermite.py -> build/lib.linux-x86_64-3.7/numpy/polynomial
+    copying numpy/polynomial/chebyshev.py -> build/lib.linux-x86_64-3.7/numpy/polynomial
+    copying numpy/polynomial/setup.py -> build/lib.linux-x86_64-3.7/numpy/polynomial
+    copying numpy/polynomial/hermite_e.py -> build/lib.linux-x86_64-3.7/numpy/polynomial
+    copying numpy/polynomial/polyutils.py -> build/lib.linux-x86_64-3.7/numpy/polynomial
+    copying numpy/polynomial/__init__.py -> build/lib.linux-x86_64-3.7/numpy/polynomial
+    creating build/lib.linux-x86_64-3.7/numpy/random
+    copying numpy/random/info.py -> build/lib.linux-x86_64-3.7/numpy/random
+    copying numpy/random/setup.py -> build/lib.linux-x86_64-3.7/numpy/random
+    copying numpy/random/__init__.py -> build/lib.linux-x86_64-3.7/numpy/random
+    creating build/lib.linux-x86_64-3.7/numpy/testing
+    copying numpy/testing/utils.py -> build/lib.linux-x86_64-3.7/numpy/testing
+    copying numpy/testing/noseclasses.py -> build/lib.linux-x86_64-3.7/numpy/testing
+    copying numpy/testing/nosetester.py -> build/lib.linux-x86_64-3.7/numpy/testing
+    copying numpy/testing/print_coercion_tables.py -> build/lib.linux-x86_64-3.7/numpy/testing
+    copying numpy/testing/setup.py -> build/lib.linux-x86_64-3.7/numpy/testing
+    copying numpy/testing/decorators.py -> build/lib.linux-x86_64-3.7/numpy/testing
+    copying numpy/testing/__init__.py -> build/lib.linux-x86_64-3.7/numpy/testing
+    running build_clib
+    customize UnixCCompiler
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    creating /tmp/tmp1k53bghj/tmp
+    creating /tmp/tmp1k53bghj/tmp/tmp1k53bghj
+    compile options: '-MMD -MF /tmp/tmp1k53bghj/file.c.d -c'
+    x86_64-conda_cos6-linux-gnu-cc: /tmp/tmp1k53bghj/file.c
+    customize UnixCCompiler using build_clib
+    building 'npymath' library
+    compiling C sources
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    creating build/temp.linux-x86_64-3.7
+    creating build/temp.linux-x86_64-3.7/numpy
+    creating build/temp.linux-x86_64-3.7/numpy/core
+    creating build/temp.linux-x86_64-3.7/numpy/core/src
+    creating build/temp.linux-x86_64-3.7/numpy/core/src/npymath
+    creating build/temp.linux-x86_64-3.7/build
+    creating build/temp.linux-x86_64-3.7/build/src.linux-x86_64-3.7
+    creating build/temp.linux-x86_64-3.7/build/src.linux-x86_64-3.7/numpy
+    creating build/temp.linux-x86_64-3.7/build/src.linux-x86_64-3.7/numpy/core
+    creating build/temp.linux-x86_64-3.7/build/src.linux-x86_64-3.7/numpy/core/src
+    creating build/temp.linux-x86_64-3.7/build/src.linux-x86_64-3.7/numpy/core/src/npymath
+    compile options: '-Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -Inumpy/core/include -Ibuild/src.linux-x86_64-3.7/numpy/core/include/numpy -Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -c'
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/npymath/npy_math.c
+    x86_64-conda_cos6-linux-gnu-cc: build/src.linux-x86_64-3.7/numpy/core/src/npymath/ieee754.c
+    x86_64-conda_cos6-linux-gnu-cc: build/src.linux-x86_64-3.7/numpy/core/src/npymath/npy_math_complex.c
+    numpy/core/src/npymath/npy_math_complex.c.src: In function 'npy_cacosf':
+    numpy/core/src/npymath/npy_math_complex.c.src:39:49: warning: unused variable 'junk' [-Wunused-variable]
+     #define raise_inexact() do { volatile npy_float junk = 1 + tiny; } while(0)
+                                                     ^
+    numpy/core/src/npymath/npy_math_complex.c.src:1325:5: note: in expansion of macro 'raise_inexact'
+         raise_inexact();
+         ^~~~~~~~~~~~~
+    numpy/core/src/npymath/npy_math_complex.c.src: In function 'npy_casinhf':
+    numpy/core/src/npymath/npy_math_complex.c.src:39:49: warning: unused variable 'junk' [-Wunused-variable]
+     #define raise_inexact() do { volatile npy_float junk = 1 + tiny; } while(0)
+                                                     ^
+    numpy/core/src/npymath/npy_math_complex.c.src:1482:5: note: in expansion of macro 'raise_inexact'
+         raise_inexact();
+         ^~~~~~~~~~~~~
+    numpy/core/src/npymath/npy_math_complex.c.src:1433:21: warning: unused variable 'pio2_hi' [-Wunused-variable]
+         const @type@ pio2_hi = NPY_PI_2@c@;
+                         ^~~~~~~
+    numpy/core/src/npymath/npy_math_complex.c.src:1422:30: warning: unused variable 'pio2_lo' [-Wunused-variable]
+         const volatile npy_float pio2_lo = 7.5497899549e-9f;
+                                  ^~~~~~~
+    numpy/core/src/npymath/npy_math_complex.c.src: In function 'npy_catanhf':
+    numpy/core/src/npymath/npy_math_complex.c.src:39:49: warning: unused variable 'junk' [-Wunused-variable]
+     #define raise_inexact() do { volatile npy_float junk = 1 + tiny; } while(0)
+                                                     ^
+    numpy/core/src/npymath/npy_math_complex.c.src:1723:9: note: in expansion of macro 'raise_inexact'
+             raise_inexact();
+             ^~~~~~~~~~~~~
+    numpy/core/src/npymath/npy_math_complex.c.src: In function 'npy_cacos':
+    numpy/core/src/npymath/npy_math_complex.c.src:39:49: warning: unused variable 'junk' [-Wunused-variable]
+     #define raise_inexact() do { volatile npy_float junk = 1 + tiny; } while(0)
+                                                     ^
+    numpy/core/src/npymath/npy_math_complex.c.src:1325:5: note: in expansion of macro 'raise_inexact'
+         raise_inexact();
+         ^~~~~~~~~~~~~
+    numpy/core/src/npymath/npy_math_complex.c.src: In function 'npy_casinh':
+    numpy/core/src/npymath/npy_math_complex.c.src:39:49: warning: unused variable 'junk' [-Wunused-variable]
+     #define raise_inexact() do { volatile npy_float junk = 1 + tiny; } while(0)
+                                                     ^
+    numpy/core/src/npymath/npy_math_complex.c.src:1482:5: note: in expansion of macro 'raise_inexact'
+         raise_inexact();
+         ^~~~~~~~~~~~~
+    numpy/core/src/npymath/npy_math_complex.c.src:1433:22: warning: unused variable 'pio2_hi' [-Wunused-variable]
+         const @type@ pio2_hi = NPY_PI_2@c@;
+                          ^~~~~~~
+    numpy/core/src/npymath/npy_math_complex.c.src:1426:31: warning: unused variable 'pio2_lo' [-Wunused-variable]
+         const volatile npy_double pio2_lo = 6.1232339957367659e-17;
+                                   ^~~~~~~
+    numpy/core/src/npymath/npy_math_complex.c.src: In function 'npy_catanh':
+    numpy/core/src/npymath/npy_math_complex.c.src:39:49: warning: unused variable 'junk' [-Wunused-variable]
+     #define raise_inexact() do { volatile npy_float junk = 1 + tiny; } while(0)
+                                                     ^
+    numpy/core/src/npymath/npy_math_complex.c.src:1723:9: note: in expansion of macro 'raise_inexact'
+             raise_inexact();
+             ^~~~~~~~~~~~~
+    numpy/core/src/npymath/npy_math_complex.c.src: In function 'npy_cacosl':
+    numpy/core/src/npymath/npy_math_complex.c.src:39:49: warning: unused variable 'junk' [-Wunused-variable]
+     #define raise_inexact() do { volatile npy_float junk = 1 + tiny; } while(0)
+                                                     ^
+    numpy/core/src/npymath/npy_math_complex.c.src:1325:5: note: in expansion of macro 'raise_inexact'
+         raise_inexact();
+         ^~~~~~~~~~~~~
+    numpy/core/src/npymath/npy_math_complex.c.src: In function 'npy_casinhl':
+    numpy/core/src/npymath/npy_math_complex.c.src:39:49: warning: unused variable 'junk' [-Wunused-variable]
+     #define raise_inexact() do { volatile npy_float junk = 1 + tiny; } while(0)
+                                                     ^
+    numpy/core/src/npymath/npy_math_complex.c.src:1482:5: note: in expansion of macro 'raise_inexact'
+         raise_inexact();
+         ^~~~~~~~~~~~~
+    numpy/core/src/npymath/npy_math_complex.c.src:1433:26: warning: unused variable 'pio2_hi' [-Wunused-variable]
+         const @type@ pio2_hi = NPY_PI_2@c@;
+                              ^~~~~~~
+    numpy/core/src/npymath/npy_math_complex.c.src:1430:35: warning: unused variable 'pio2_lo' [-Wunused-variable]
+         const volatile npy_longdouble pio2_lo = 2.710505431213761085e-20l;
+                                       ^~~~~~~
+    numpy/core/src/npymath/npy_math_complex.c.src: In function 'npy_catanhl':
+    numpy/core/src/npymath/npy_math_complex.c.src:39:49: warning: unused variable 'junk' [-Wunused-variable]
+     #define raise_inexact() do { volatile npy_float junk = 1 + tiny; } while(0)
+                                                     ^
+    numpy/core/src/npymath/npy_math_complex.c.src:1723:9: note: in expansion of macro 'raise_inexact'
+             raise_inexact();
+             ^~~~~~~~~~~~~
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/npymath/halffloat.c
+    x86_64-conda_cos6-linux-gnu-ar: adding 4 object files to build/temp.linux-x86_64-3.7/libnpymath.a
+    building 'npysort' library
+    compiling C sources
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    creating build/temp.linux-x86_64-3.7/build/src.linux-x86_64-3.7/numpy/core/src/npysort
+    compile options: '-Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Inumpy/core/include -Ibuild/src.linux-x86_64-3.7/numpy/core/include/numpy -Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -c'
+    x86_64-conda_cos6-linux-gnu-cc: build/src.linux-x86_64-3.7/numpy/core/src/npysort/quicksort.c
+    x86_64-conda_cos6-linux-gnu-cc: build/src.linux-x86_64-3.7/numpy/core/src/npysort/mergesort.c
+    x86_64-conda_cos6-linux-gnu-cc: build/src.linux-x86_64-3.7/numpy/core/src/npysort/heapsort.c
+    x86_64-conda_cos6-linux-gnu-cc: build/src.linux-x86_64-3.7/numpy/core/src/npysort/selection.c
+    x86_64-conda_cos6-linux-gnu-cc: build/src.linux-x86_64-3.7/numpy/core/src/npysort/binsearch.c
+    x86_64-conda_cos6-linux-gnu-ar: adding 5 object files to build/temp.linux-x86_64-3.7/libnpysort.a
+    running build_ext
+    customize UnixCCompiler
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    creating /tmp/tmpjc39lvbd/tmp
+    creating /tmp/tmpjc39lvbd/tmp/tmpjc39lvbd
+    compile options: '-MMD -MF /tmp/tmpjc39lvbd/file.c.d -c'
+    x86_64-conda_cos6-linux-gnu-cc: /tmp/tmpjc39lvbd/file.c
+    customize UnixCCompiler using build_ext
+    building 'numpy.core._dummy' extension
+    compiling C sources
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    compile options: '-DNPY_INTERNAL_BUILD=1 -DHAVE_NPY_CONFIG_H=1 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -Inumpy/core/include -Ibuild/src.linux-x86_64-3.7/numpy/core/include/numpy -Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -c'
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/dummymodule.c
+    x86_64-conda_cos6-linux-gnu-gcc -pthread -shared -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-rpath,/home/lenovo/anaconda/anaconda3/lib -L/home/lenovo/anaconda/anaconda3/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-rpath,/home/lenovo/anaconda/anaconda3/lib -L/home/lenovo/anaconda/anaconda3/lib -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 build/temp.linux-x86_64-3.7/numpy/core/src/dummymodule.o -Lbuild/temp.linux-x86_64-3.7 -lm -o build/lib.linux-x86_64-3.7/numpy/core/_dummy.cpython-37m-x86_64-linux-gnu.so
+    building 'numpy.core.multiarray' extension
+    compiling C sources
+    C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+    creating build/temp.linux-x86_64-3.7/numpy/core/src/multiarray
+    creating build/temp.linux-x86_64-3.7/build/src.linux-x86_64-3.7/numpy/core/src/multiarray
+    creating build/temp.linux-x86_64-3.7/numpy/core/src/private
+    compile options: '-DNPY_INTERNAL_BUILD=1 -DHAVE_NPY_CONFIG_H=1 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -DSCIPY_MKL_H -DHAVE_CBLAS -I/usr/local/include -I/usr/include -I/home/lenovo/anaconda/anaconda3/include -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Inumpy/core/include -Ibuild/src.linux-x86_64-3.7/numpy/core/include/numpy -Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -c'
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/alloc.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/arrayobject.c
+    x86_64-conda_cos6-linux-gnu-cc: build/src.linux-x86_64-3.7/numpy/core/src/multiarray/arraytypes.c
+    numpy/core/src/multiarray/arraytypes.c.src: In function 'VOID_setitem':
+    numpy/core/src/multiarray/arraytypes.c.src:874:9: warning: 'PyObject_AsReadBuffer' is deprecated [-Wdeprecated-declarations]
+             res = PyObject_AsReadBuffer(op, &buffer, &buflen);
+             ^~~
+    In file included from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:147:0,
+                     from numpy/core/src/multiarray/arraytypes.c.src:3:
+    /home/lenovo/anaconda/anaconda3/include/python3.7m/abstract.h:489:17: note: declared here
+     PyAPI_FUNC(int) PyObject_AsReadBuffer(PyObject *obj,
+                     ^~~~~~~~~~~~~~~~~~~~~
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/array_assign.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/array_assign_scalar.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/array_assign_array.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/buffer.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/calculation.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/compiled_base.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/common.c
+    numpy/core/src/multiarray/common.c: In function '_IsWriteable':
+    numpy/core/src/multiarray/common.c:671:5: warning: 'PyObject_AsWriteBuffer' is deprecated [-Wdeprecated-declarations]
+         if (PyObject_AsWriteBuffer(base, &dummy, &n) < 0) {
+         ^~
+    In file included from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:147:0,
+                     from numpy/core/src/multiarray/common.c:2:
+    /home/lenovo/anaconda/anaconda3/include/python3.7m/abstract.h:500:17: note: declared here
+     PyAPI_FUNC(int) PyObject_AsWriteBuffer(PyObject *obj,
+                     ^~~~~~~~~~~~~~~~~~~~~~
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/convert.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/convert_datatype.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/conversion_utils.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/ctors.c
+    numpy/core/src/multiarray/ctors.c: In function 'PyArray_FromInterface':
+    numpy/core/src/multiarray/ctors.c:2322:9: warning: 'PyObject_AsWriteBuffer' is deprecated [-Wdeprecated-declarations]
+             res = PyObject_AsWriteBuffer(base, (void **)&data, &buffer_len);
+             ^~~
+    In file included from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:147:0,
+                     from numpy/core/src/multiarray/ctors.c:2:
+    /home/lenovo/anaconda/anaconda3/include/python3.7m/abstract.h:500:17: note: declared here
+     PyAPI_FUNC(int) PyObject_AsWriteBuffer(PyObject *obj,
+                     ^~~~~~~~~~~~~~~~~~~~~~
+    numpy/core/src/multiarray/ctors.c:2325:13: warning: 'PyObject_AsReadBuffer' is deprecated [-Wdeprecated-declarations]
+                 res = PyObject_AsReadBuffer(
+                 ^~~
+    In file included from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:147:0,
+                     from numpy/core/src/multiarray/ctors.c:2:
+    /home/lenovo/anaconda/anaconda3/include/python3.7m/abstract.h:489:17: note: declared here
+     PyAPI_FUNC(int) PyObject_AsReadBuffer(PyObject *obj,
+                     ^~~~~~~~~~~~~~~~~~~~~
+    numpy/core/src/multiarray/ctors.c: In function 'PyArray_FromBuffer':
+    numpy/core/src/multiarray/ctors.c:3501:5: warning: 'PyObject_AsWriteBuffer' is deprecated [-Wdeprecated-declarations]
+         if (PyObject_AsWriteBuffer(buf, (void *)&data, &ts) == -1) {
+         ^~
+    In file included from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:147:0,
+                     from numpy/core/src/multiarray/ctors.c:2:
+    /home/lenovo/anaconda/anaconda3/include/python3.7m/abstract.h:500:17: note: declared here
+     PyAPI_FUNC(int) PyObject_AsWriteBuffer(PyObject *obj,
+                     ^~~~~~~~~~~~~~~~~~~~~~
+    numpy/core/src/multiarray/ctors.c:3504:9: warning: 'PyObject_AsReadBuffer' is deprecated [-Wdeprecated-declarations]
+             if (PyObject_AsReadBuffer(buf, (void *)&data, &ts) == -1) {
+             ^~
+    In file included from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:147:0,
+                     from numpy/core/src/multiarray/ctors.c:2:
+    /home/lenovo/anaconda/anaconda3/include/python3.7m/abstract.h:489:17: note: declared here
+     PyAPI_FUNC(int) PyObject_AsReadBuffer(PyObject *obj,
+                     ^~~~~~~~~~~~~~~~~~~~~
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/datetime.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/datetime_strings.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/datetime_busday.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/datetime_busdaycal.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/descriptor.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/dtype_transfer.c
+    x86_64-conda_cos6-linux-gnu-cc: build/src.linux-x86_64-3.7/numpy/core/src/multiarray/einsum.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/flagsobject.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/getset.c
+    numpy/core/src/multiarray/getset.c: In function 'array_strides_set':
+    numpy/core/src/multiarray/getset.c:134:5: warning: 'PyObject_AsReadBuffer' is deprecated [-Wdeprecated-declarations]
+         if (PyArray_BASE(new) && PyObject_AsReadBuffer(PyArray_BASE(new),
+         ^~
+    In file included from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:147:0,
+                     from numpy/core/src/multiarray/getset.c:4:
+    /home/lenovo/anaconda/anaconda3/include/python3.7m/abstract.h:489:17: note: declared here
+     PyAPI_FUNC(int) PyObject_AsReadBuffer(PyObject *obj,
+                     ^~~~~~~~~~~~~~~~~~~~~
+    numpy/core/src/multiarray/getset.c: In function 'array_data_set':
+    numpy/core/src/multiarray/getset.c:344:5: warning: 'PyObject_AsWriteBuffer' is deprecated [-Wdeprecated-declarations]
+         if (PyObject_AsWriteBuffer(op, &buf, &buf_len) < 0) {
+         ^~
+    In file included from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:147:0,
+                     from numpy/core/src/multiarray/getset.c:4:
+    /home/lenovo/anaconda/anaconda3/include/python3.7m/abstract.h:500:17: note: declared here
+     PyAPI_FUNC(int) PyObject_AsWriteBuffer(PyObject *obj,
+                     ^~~~~~~~~~~~~~~~~~~~~~
+    numpy/core/src/multiarray/getset.c:346:9: warning: 'PyObject_AsReadBuffer' is deprecated [-Wdeprecated-declarations]
+             if (PyObject_AsReadBuffer(op, (const void **)&buf, &buf_len) < 0) {
+             ^~
+    In file included from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:147:0,
+                     from numpy/core/src/multiarray/getset.c:4:
+    /home/lenovo/anaconda/anaconda3/include/python3.7m/abstract.h:489:17: note: declared here
+     PyAPI_FUNC(int) PyObject_AsReadBuffer(PyObject *obj,
+                     ^~~~~~~~~~~~~~~~~~~~~
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/hashdescr.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/item_selection.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/iterators.c
+    x86_64-conda_cos6-linux-gnu-cc: build/src.linux-x86_64-3.7/numpy/core/src/multiarray/lowlevel_strided_loops.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/mapping.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/methods.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/multiarraymodule.c
+    x86_64-conda_cos6-linux-gnu-cc: build/src.linux-x86_64-3.7/numpy/core/src/multiarray/nditer_templ.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/nditer_api.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/nditer_constr.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/nditer_pywrap.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/number.c
+    x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/numpyos.c
+    In file included from numpy/core/src/multiarray/numpyos.c:23:0:
+    /home/lenovo/anaconda/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/xlocale.h:28:16: error: redefinition of 'struct __locale_struct'
+     typedef struct __locale_struct
+                    ^~~~~~~~~~~~~~~
+    In file included from /usr/include/bits/types/locale_t.h:22:0,
+                     from /usr/include/string.h:152,
+                     from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:30,
+                     from numpy/core/src/multiarray/numpyos.c:2:
+    /usr/include/bits/types/__locale_t.h:28:8: note: originally defined here
+     struct __locale_struct
+            ^~~~~~~~~~~~~~~
+    In file included from numpy/core/src/multiarray/numpyos.c:23:0:
+    /home/lenovo/anaconda/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/xlocale.h:40:4: error: conflicting types for '__locale_t'
+     } *__locale_t;
+        ^~~~~~~~~~
+    In file included from /usr/include/bits/types/locale_t.h:22:0,
+                     from /usr/include/string.h:152,
+                     from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:30,
+                     from numpy/core/src/multiarray/numpyos.c:2:
+    /usr/include/bits/types/__locale_t.h:42:33: note: previous declaration of '__locale_t' was here
+     typedef struct __locale_struct *__locale_t;
+                                     ^~~~~~~~~~
+    In file included from numpy/core/src/multiarray/numpyos.c:23:0:
+    /home/lenovo/anaconda/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/xlocale.h:43:20: error: conflicting types for 'locale_t'
+     typedef __locale_t locale_t;
+                        ^~~~~~~~
+    In file included from /usr/include/string.h:152:0,
+                     from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:30,
+                     from numpy/core/src/multiarray/numpyos.c:2:
+    /usr/include/bits/types/locale_t.h:24:20: note: previous declaration of 'locale_t' was here
+     typedef __locale_t locale_t;
+                        ^~~~~~~~
+    numpy/core/src/multiarray/numpyos.c: In function 'NumPyOS_ascii_strtold':
+    numpy/core/src/multiarray/numpyos.c:568:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+         clocale = newlocale(LC_ALL_MASK, "C", NULL);
+                 ^
+    numpy/core/src/multiarray/numpyos.c:571:39: warning: passing argument 3 of 'strtold_l' from incompatible pointer type [-Wincompatible-pointer-types]
+             result = strtold_l(s, endptr, clocale);
+                                           ^~~~~~~
+    In file included from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:34:0,
+                     from numpy/core/src/multiarray/numpyos.c:2:
+    /usr/include/stdlib.h:303:20: note: expected 'locale_t {aka struct __locale_struct *}' but argument is of type 'locale_t {aka struct __locale_struct *}'
+     extern long double strtold_l (const char *__restrict __nptr,
+                        ^~~~~~~~~
+    numpy/core/src/multiarray/numpyos.c:572:20: warning: passing argument 1 of 'freelocale' from incompatible pointer type [-Wincompatible-pointer-types]
+             freelocale(clocale);
+                        ^~~~~~~
+    In file included from numpy/core/src/multiarray/numpyos.c:4:0:
+    /usr/include/locale.h:180:13: note: expected 'locale_t {aka struct __locale_struct *}' but argument is of type 'locale_t {aka struct __locale_struct *}'
+     extern void freelocale (locale_t __dataset) __THROW;
+                 ^~~~~~~~~~
+    In file included from numpy/core/src/multiarray/numpyos.c:23:0:
+    /home/lenovo/anaconda/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/xlocale.h:28:16: error: redefinition of 'struct __locale_struct'
+     typedef struct __locale_struct
+                    ^~~~~~~~~~~~~~~
+    In file included from /usr/include/bits/types/locale_t.h:22:0,
+                     from /usr/include/string.h:152,
+                     from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:30,
+                     from numpy/core/src/multiarray/numpyos.c:2:
+    /usr/include/bits/types/__locale_t.h:28:8: note: originally defined here
+     struct __locale_struct
+            ^~~~~~~~~~~~~~~
+    In file included from numpy/core/src/multiarray/numpyos.c:23:0:
+    /home/lenovo/anaconda/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/xlocale.h:40:4: error: conflicting types for '__locale_t'
+     } *__locale_t;
+        ^~~~~~~~~~
+    In file included from /usr/include/bits/types/locale_t.h:22:0,
+                     from /usr/include/string.h:152,
+                     from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:30,
+                     from numpy/core/src/multiarray/numpyos.c:2:
+    /usr/include/bits/types/__locale_t.h:42:33: note: previous declaration of '__locale_t' was here
+     typedef struct __locale_struct *__locale_t;
+                                     ^~~~~~~~~~
+    In file included from numpy/core/src/multiarray/numpyos.c:23:0:
+    /home/lenovo/anaconda/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/xlocale.h:43:20: error: conflicting types for 'locale_t'
+     typedef __locale_t locale_t;
+                        ^~~~~~~~
+    In file included from /usr/include/string.h:152:0,
+                     from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:30,
+                     from numpy/core/src/multiarray/numpyos.c:2:
+    /usr/include/bits/types/locale_t.h:24:20: note: previous declaration of 'locale_t' was here
+     typedef __locale_t locale_t;
+                        ^~~~~~~~
+    numpy/core/src/multiarray/numpyos.c: In function 'NumPyOS_ascii_strtold':
+    numpy/core/src/multiarray/numpyos.c:568:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+         clocale = newlocale(LC_ALL_MASK, "C", NULL);
+                 ^
+    numpy/core/src/multiarray/numpyos.c:571:39: warning: passing argument 3 of 'strtold_l' from incompatible pointer type [-Wincompatible-pointer-types]
+             result = strtold_l(s, endptr, clocale);
+                                           ^~~~~~~
+    In file included from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:34:0,
+                     from numpy/core/src/multiarray/numpyos.c:2:
+    /usr/include/stdlib.h:303:20: note: expected 'locale_t {aka struct __locale_struct *}' but argument is of type 'locale_t {aka struct __locale_struct *}'
+     extern long double strtold_l (const char *__restrict __nptr,
+                        ^~~~~~~~~
+    numpy/core/src/multiarray/numpyos.c:572:20: warning: passing argument 1 of 'freelocale' from incompatible pointer type [-Wincompatible-pointer-types]
+             freelocale(clocale);
+                        ^~~~~~~
+    In file included from numpy/core/src/multiarray/numpyos.c:4:0:
+    /usr/include/locale.h:180:13: note: expected 'locale_t {aka struct __locale_struct *}' but argument is of type 'locale_t {aka struct __locale_struct *}'
+     extern void freelocale (locale_t __dataset) __THROW;
+                 ^~~~~~~~~~
+    error: Command "/home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC -DNPY_INTERNAL_BUILD=1 -DHAVE_NPY_CONFIG_H=1 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -DSCIPY_MKL_H -DHAVE_CBLAS -I/usr/local/include -I/usr/include -I/home/lenovo/anaconda/anaconda3/include -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Inumpy/core/include -Ibuild/src.linux-x86_64-3.7/numpy/core/include/numpy -Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -c numpy/core/src/multiarray/numpyos.c -o build/temp.linux-x86_64-3.7/numpy/core/src/multiarray/numpyos.o -MMD -MF build/temp.linux-x86_64-3.7/numpy/core/src/multiarray/numpyos.o.d" failed with exit status 1
+  
+    ----------------------------------------
+    Failed building wheel for numpy
+    Running setup.py clean for numpy
+    Complete output from command /home/lenovo/anaconda/anaconda3/bin/python -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-fkqqkdfu/numpy/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" clean --all:
+    Running from numpy source directory.
+  
+    `setup.py clean` is not supported, use one of the following instead:
+  
+      - `git clean -xdf` (cleans all files)
+      - `git clean -Xdf` (cleans all versioned files, doesn't touch
+                          files that aren't checked into the git repo)
+  
+    Add `--force` to your command to use it anyway if you must (unsupported).
+  
+  
+    ----------------------------------------
+    Failed cleaning build dir for numpy
+  Failed to build numpy
+  tensorflow 1.13.1 has requirement numpy>=1.13.3, but you'll have numpy 1.13.1 which is incompatible.
+  tensorflow-estimator 1.13.0 has requirement numpy>=1.13.3, but you'll have numpy 1.13.1 which is incompatible.
+  imbalanced-learn 0.4.3 has requirement scikit-learn>=0.20, but you'll have scikit-learn 0.19.2 which is incompatible.
+  Installing collected packages: wheel, setuptools, Cython, numpy
+    Running setup.py install for numpy: started
+      Running setup.py install for numpy: finished with status 'error'
+      Complete output from command /home/lenovo/anaconda/anaconda3/bin/python -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-fkqqkdfu/numpy/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-record-fp3kjb3b/install-record.txt --single-version-externally-managed --prefix /tmp/pip-build-env-_kg5591h/overlay --compile:
+      Running from numpy source directory.
+  
+      Note: if you need reliable uninstall behavior, then install
+      with pip instead of using `setup.py install`:
+  
+        - `pip install .`       (from a git repo or downloaded source
+                                 release)
+        - `pip install numpy`   (last NumPy release on PyPi)
+  
+  
+      blas_opt_info:
+      blas_mkl_info:
+        FOUND:
+          libraries = ['mkl_rt', 'pthread']
+          library_dirs = ['/home/lenovo/anaconda/anaconda3/lib']
+          define_macros = [('SCIPY_MKL_H', None), ('HAVE_CBLAS', None)]
+          include_dirs = ['/usr/local/include', '/usr/include', '/home/lenovo/anaconda/anaconda3/include']
+  
+        FOUND:
+          libraries = ['mkl_rt', 'pthread']
+          library_dirs = ['/home/lenovo/anaconda/anaconda3/lib']
+          define_macros = [('SCIPY_MKL_H', None), ('HAVE_CBLAS', None)]
+          include_dirs = ['/usr/local/include', '/usr/include', '/home/lenovo/anaconda/anaconda3/include']
+  
+      /bin/sh: 1: svnversion: not found
+      non-existing path in 'numpy/distutils': 'site.cfg'
+      /bin/sh: 1: svnversion: not found
+      F2PY Version 2
+      lapack_opt_info:
+      lapack_mkl_info:
+        FOUND:
+          libraries = ['mkl_rt', 'pthread']
+          library_dirs = ['/home/lenovo/anaconda/anaconda3/lib']
+          define_macros = [('SCIPY_MKL_H', None), ('HAVE_CBLAS', None)]
+          include_dirs = ['/usr/local/include', '/usr/include', '/home/lenovo/anaconda/anaconda3/include']
+  
+        FOUND:
+          libraries = ['mkl_rt', 'pthread']
+          library_dirs = ['/home/lenovo/anaconda/anaconda3/lib']
+          define_macros = [('SCIPY_MKL_H', None), ('HAVE_CBLAS', None)]
+          include_dirs = ['/usr/local/include', '/usr/include', '/home/lenovo/anaconda/anaconda3/include']
+  
+      /home/lenovo/anaconda/anaconda3/lib/python3.7/distutils/dist.py:274: UserWarning: Unknown distribution option: 'define_macros'
+        warnings.warn(msg)
+      running install
+      running build
+      running config_cc
+      unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+      running config_fc
+      unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+      running build_src
+      build_src
+      building py_modules sources
+      building library "npymath" sources
+      customize Gnu95FCompiler
+      Could not locate executable gfortran
+      Could not locate executable f95
+      customize IntelFCompiler
+      Could not locate executable ifort
+      Could not locate executable ifc
+      customize LaheyFCompiler
+      Could not locate executable lf95
+      customize PGroupFCompiler
+      Could not locate executable pgfortran
+      customize AbsoftFCompiler
+      Could not locate executable f90
+      Could not locate executable f77
+      customize NAGFCompiler
+      customize VastFCompiler
+      customize CompaqFCompiler
+      Could not locate executable fort
+      customize IntelItaniumFCompiler
+      Could not locate executable efort
+      Could not locate executable efc
+      customize IntelEM64TFCompiler
+      customize GnuFCompiler
+      Could not locate executable g77
+      customize G95FCompiler
+      Could not locate executable g95
+      customize PathScaleFCompiler
+      Could not locate executable pathf95
+      don't know how to compile Fortran code on platform 'posix'
+      C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+      compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+      x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+      /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+      success!
+      removing: _configtest.c _configtest.o _configtest
+      C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+      compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+      x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+      _configtest.c:1:5: warning: conflicting types for built-in function 'exp' [-Wbuiltin-declaration-mismatch]
+       int exp (void);
+           ^~~
+      /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -o _configtest
+      /home/lenovo/anaconda/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/bin/ld: _configtest.o: in function `main':
+      _configtest.c:(.text.startup.main+0x6): undefined reference to `exp'
+      collect2: error: ld returned 1 exit status
+      /home/lenovo/anaconda/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/bin/ld: _configtest.o: in function `main':
+      _configtest.c:(.text.startup.main+0x6): undefined reference to `exp'
+      collect2: error: ld returned 1 exit status
+      failure.
+      removing: _configtest.c _configtest.o
+      C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+      compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -c'
+      x86_64-conda_cos6-linux-gnu-cc: _configtest.c
+      _configtest.c:1:5: warning: conflicting types for built-in function 'exp' [-Wbuiltin-declaration-mismatch]
+       int exp (void);
+           ^~~
+      /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc _configtest.o -lm -o _configtest
+      success!
+      removing: _configtest.c _configtest.o _configtest
+        adding 'build/src.linux-x86_64-3.7/numpy/core/src/npymath' to include_dirs.
+      None - nothing done with h_files = ['build/src.linux-x86_64-3.7/numpy/core/src/npymath/npy_math_internal.h']
+      building library "npysort" sources
+        adding 'build/src.linux-x86_64-3.7/numpy/core/src/private' to include_dirs.
+      None - nothing done with h_files = ['build/src.linux-x86_64-3.7/numpy/core/src/private/npy_partition.h', 'build/src.linux-x86_64-3.7/numpy/core/src/private/npy_binsearch.h']
+      building extension "numpy.core._dummy" sources
+        adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/config.h' to sources.
+        adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/_numpyconfig.h' to sources.
+      executing numpy/core/code_generators/generate_numpy_api.py
+        adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/__multiarray_api.h' to sources.
+      numpy.core - nothing done with h_files = ['build/src.linux-x86_64-3.7/numpy/core/include/numpy/config.h', 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/_numpyconfig.h', 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/__multiarray_api.h']
+      building extension "numpy.core.multiarray" sources
+        adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/config.h' to sources.
+        adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/_numpyconfig.h' to sources.
+      executing numpy/core/code_generators/generate_numpy_api.py
+        adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/__multiarray_api.h' to sources.
+        adding 'build/src.linux-x86_64-3.7/numpy/core/src/private' to include_dirs.
+      numpy.core - nothing done with h_files = ['build/src.linux-x86_64-3.7/numpy/core/src/private/templ_common.h', 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/config.h', 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/_numpyconfig.h', 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/__multiarray_api.h']
+      building extension "numpy.core.umath" sources
+        adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/config.h' to sources.
+        adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/_numpyconfig.h' to sources.
+      executing numpy/core/code_generators/generate_ufunc_api.py
+        adding 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/__ufunc_api.h' to sources.
+        adding 'build/src.linux-x86_64-3.7/numpy/core/src/umath' to include_dirs.
+      numpy.core - nothing done with h_files = ['build/src.linux-x86_64-3.7/numpy/core/src/umath/funcs.inc', 'build/src.linux-x86_64-3.7/numpy/core/src/umath/simd.inc', 'build/src.linux-x86_64-3.7/numpy/core/src/umath/loops.h', 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/config.h', 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/_numpyconfig.h', 'build/src.linux-x86_64-3.7/numpy/core/include/numpy/__ufunc_api.h']
+      building extension "numpy.core.umath_tests" sources
+      building extension "numpy.core.test_rational" sources
+      building extension "numpy.core.struct_ufunc_test" sources
+      building extension "numpy.core.multiarray_tests" sources
+      building extension "numpy.core.operand_flag_tests" sources
+      building extension "numpy.fft.fftpack_lite" sources
+      building extension "numpy.linalg.lapack_lite" sources
+        adding 'numpy/linalg/lapack_lite/python_xerbla.c' to sources.
+      building extension "numpy.linalg._umath_linalg" sources
+        adding 'numpy/linalg/lapack_lite/python_xerbla.c' to sources.
+      building extension "numpy.random.mtrand" sources
+      building data_files sources
+      build_src: building npy-pkg config files
+      running build_py
+      copying numpy/version.py -> build/lib.linux-x86_64-3.7/numpy
+      copying build/src.linux-x86_64-3.7/numpy/__config__.py -> build/lib.linux-x86_64-3.7/numpy
+      copying build/src.linux-x86_64-3.7/numpy/distutils/__config__.py -> build/lib.linux-x86_64-3.7/numpy/distutils
+      running build_clib
+      customize UnixCCompiler
+      C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+      creating /tmp/tmp6nh0azjw/tmp
+      creating /tmp/tmp6nh0azjw/tmp/tmp6nh0azjw
+      compile options: '-MMD -MF /tmp/tmp6nh0azjw/file.c.d -c'
+      x86_64-conda_cos6-linux-gnu-cc: /tmp/tmp6nh0azjw/file.c
+      customize UnixCCompiler using build_clib
+      running build_ext
+      customize UnixCCompiler
+      C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+      creating /tmp/tmpwln3x901/tmp
+      creating /tmp/tmpwln3x901/tmp/tmpwln3x901
+      compile options: '-MMD -MF /tmp/tmpwln3x901/file.c.d -c'
+      x86_64-conda_cos6-linux-gnu-cc: /tmp/tmpwln3x901/file.c
+      customize UnixCCompiler using build_ext
+      building 'numpy.core.multiarray' extension
+      compiling C sources
+      C compiler: /home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC
+  
+      compile options: '-DNPY_INTERNAL_BUILD=1 -DHAVE_NPY_CONFIG_H=1 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -DSCIPY_MKL_H -DHAVE_CBLAS -I/usr/local/include -I/usr/include -I/home/lenovo/anaconda/anaconda3/include -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Inumpy/core/include -Ibuild/src.linux-x86_64-3.7/numpy/core/include/numpy -Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -c'
+      x86_64-conda_cos6-linux-gnu-cc: numpy/core/src/multiarray/numpyos.c
+      In file included from numpy/core/src/multiarray/numpyos.c:23:0:
+      /home/lenovo/anaconda/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/xlocale.h:28:16: error: redefinition of 'struct __locale_struct'
+       typedef struct __locale_struct
+                      ^~~~~~~~~~~~~~~
+      In file included from /usr/include/bits/types/locale_t.h:22:0,
+                       from /usr/include/string.h:152,
+                       from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:30,
+                       from numpy/core/src/multiarray/numpyos.c:2:
+      /usr/include/bits/types/__locale_t.h:28:8: note: originally defined here
+       struct __locale_struct
+              ^~~~~~~~~~~~~~~
+      In file included from numpy/core/src/multiarray/numpyos.c:23:0:
+      /home/lenovo/anaconda/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/xlocale.h:40:4: error: conflicting types for '__locale_t'
+       } *__locale_t;
+          ^~~~~~~~~~
+      In file included from /usr/include/bits/types/locale_t.h:22:0,
+                       from /usr/include/string.h:152,
+                       from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:30,
+                       from numpy/core/src/multiarray/numpyos.c:2:
+      /usr/include/bits/types/__locale_t.h:42:33: note: previous declaration of '__locale_t' was here
+       typedef struct __locale_struct *__locale_t;
+                                       ^~~~~~~~~~
+      In file included from numpy/core/src/multiarray/numpyos.c:23:0:
+      /home/lenovo/anaconda/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/xlocale.h:43:20: error: conflicting types for 'locale_t'
+       typedef __locale_t locale_t;
+                          ^~~~~~~~
+      In file included from /usr/include/string.h:152:0,
+                       from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:30,
+                       from numpy/core/src/multiarray/numpyos.c:2:
+      /usr/include/bits/types/locale_t.h:24:20: note: previous declaration of 'locale_t' was here
+       typedef __locale_t locale_t;
+                          ^~~~~~~~
+      numpy/core/src/multiarray/numpyos.c: In function 'NumPyOS_ascii_strtold':
+      numpy/core/src/multiarray/numpyos.c:568:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+           clocale = newlocale(LC_ALL_MASK, "C", NULL);
+                   ^
+      numpy/core/src/multiarray/numpyos.c:571:39: warning: passing argument 3 of 'strtold_l' from incompatible pointer type [-Wincompatible-pointer-types]
+               result = strtold_l(s, endptr, clocale);
+                                             ^~~~~~~
+      In file included from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:34:0,
+                       from numpy/core/src/multiarray/numpyos.c:2:
+      /usr/include/stdlib.h:303:20: note: expected 'locale_t {aka struct __locale_struct *}' but argument is of type 'locale_t {aka struct __locale_struct *}'
+       extern long double strtold_l (const char *__restrict __nptr,
+                          ^~~~~~~~~
+      numpy/core/src/multiarray/numpyos.c:572:20: warning: passing argument 1 of 'freelocale' from incompatible pointer type [-Wincompatible-pointer-types]
+               freelocale(clocale);
+                          ^~~~~~~
+      In file included from numpy/core/src/multiarray/numpyos.c:4:0:
+      /usr/include/locale.h:180:13: note: expected 'locale_t {aka struct __locale_struct *}' but argument is of type 'locale_t {aka struct __locale_struct *}'
+       extern void freelocale (locale_t __dataset) __THROW;
+                   ^~~~~~~~~~
+      In file included from numpy/core/src/multiarray/numpyos.c:23:0:
+      /home/lenovo/anaconda/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/xlocale.h:28:16: error: redefinition of 'struct __locale_struct'
+       typedef struct __locale_struct
+                      ^~~~~~~~~~~~~~~
+      In file included from /usr/include/bits/types/locale_t.h:22:0,
+                       from /usr/include/string.h:152,
+                       from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:30,
+                       from numpy/core/src/multiarray/numpyos.c:2:
+      /usr/include/bits/types/__locale_t.h:28:8: note: originally defined here
+       struct __locale_struct
+              ^~~~~~~~~~~~~~~
+      In file included from numpy/core/src/multiarray/numpyos.c:23:0:
+      /home/lenovo/anaconda/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/xlocale.h:40:4: error: conflicting types for '__locale_t'
+       } *__locale_t;
+          ^~~~~~~~~~
+      In file included from /usr/include/bits/types/locale_t.h:22:0,
+                       from /usr/include/string.h:152,
+                       from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:30,
+                       from numpy/core/src/multiarray/numpyos.c:2:
+      /usr/include/bits/types/__locale_t.h:42:33: note: previous declaration of '__locale_t' was here
+       typedef struct __locale_struct *__locale_t;
+                                       ^~~~~~~~~~
+      In file included from numpy/core/src/multiarray/numpyos.c:23:0:
+      /home/lenovo/anaconda/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/include/xlocale.h:43:20: error: conflicting types for 'locale_t'
+       typedef __locale_t locale_t;
+                          ^~~~~~~~
+      In file included from /usr/include/string.h:152:0,
+                       from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:30,
+                       from numpy/core/src/multiarray/numpyos.c:2:
+      /usr/include/bits/types/locale_t.h:24:20: note: previous declaration of 'locale_t' was here
+       typedef __locale_t locale_t;
+                          ^~~~~~~~
+      numpy/core/src/multiarray/numpyos.c: In function 'NumPyOS_ascii_strtold':
+      numpy/core/src/multiarray/numpyos.c:568:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+           clocale = newlocale(LC_ALL_MASK, "C", NULL);
+                   ^
+      numpy/core/src/multiarray/numpyos.c:571:39: warning: passing argument 3 of 'strtold_l' from incompatible pointer type [-Wincompatible-pointer-types]
+               result = strtold_l(s, endptr, clocale);
+                                             ^~~~~~~
+      In file included from /home/lenovo/anaconda/anaconda3/include/python3.7m/Python.h:34:0,
+                       from numpy/core/src/multiarray/numpyos.c:2:
+      /usr/include/stdlib.h:303:20: note: expected 'locale_t {aka struct __locale_struct *}' but argument is of type 'locale_t {aka struct __locale_struct *}'
+       extern long double strtold_l (const char *__restrict __nptr,
+                          ^~~~~~~~~
+      numpy/core/src/multiarray/numpyos.c:572:20: warning: passing argument 1 of 'freelocale' from incompatible pointer type [-Wincompatible-pointer-types]
+               freelocale(clocale);
+                          ^~~~~~~
+      In file included from numpy/core/src/multiarray/numpyos.c:4:0:
+      /usr/include/locale.h:180:13: note: expected 'locale_t {aka struct __locale_struct *}' but argument is of type 'locale_t {aka struct __locale_struct *}'
+       extern void freelocale (locale_t __dataset) __THROW;
+                   ^~~~~~~~~~
+      error: Command "/home/lenovo/anaconda/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -DNDEBUG -fwrapv -O2 -Wall -Wstrict-prototypes -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -fPIC -DNPY_INTERNAL_BUILD=1 -DHAVE_NPY_CONFIG_H=1 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -DSCIPY_MKL_H -DHAVE_CBLAS -I/usr/local/include -I/usr/include -I/home/lenovo/anaconda/anaconda3/include -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Inumpy/core/include -Ibuild/src.linux-x86_64-3.7/numpy/core/include/numpy -Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/home/lenovo/anaconda/anaconda3/include/python3.7m -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -Ibuild/src.linux-x86_64-3.7/numpy/core/src/private -Ibuild/src.linux-x86_64-3.7/numpy/core/src/npymath -c numpy/core/src/multiarray/numpyos.c -o build/temp.linux-x86_64-3.7/numpy/core/src/multiarray/numpyos.o -MMD -MF build/temp.linux-x86_64-3.7/numpy/core/src/multiarray/numpyos.o.d" failed with exit status 1
+  
+      ----------------------------------------
+  Command "/home/lenovo/anaconda/anaconda3/bin/python -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-fkqqkdfu/numpy/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-record-fp3kjb3b/install-record.txt --single-version-externally-managed --prefix /tmp/pip-build-env-_kg5591h/overlay --compile" failed with error code 1 in /tmp/pip-install-fkqqkdfu/numpy/
+  
+  ----------------------------------------
+Command "/home/lenovo/anaconda/anaconda3/bin/python /home/lenovo/anaconda/anaconda3/lib/python3.7/site-packages/pip install --ignore-installed --no-user --prefix /tmp/pip-build-env-_kg5591h/overlay --no-warn-script-location --no-binary :none: --only-binary :none: -i https://pypi.org/simple -- wheel setuptools Cython "numpy==1.9.3; python_version=='3.5'" "numpy==1.12.1; python_version=='3.6'" "numpy==1.13.1; python_version>='3.7'"" failed with error code 1 in None
